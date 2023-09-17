@@ -1,0 +1,578 @@
+/****************************** Estilos globales *****************************/
+
+
+* {
+    /* Format reset*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Fuentes globales*/
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    /* estilo enlaces */
+    text-decoration: none;
+    /* color: rgb(198, 156, 28); */
+    color: rgb(244, 202, 88);
+}
+
+main {
+    /**** Imagen de fondo para todo el sitio***/
+    background-image: url(../img/moais.jpeg);
+    background-size: cover;
+    background-repeat: repeat-y;
+
+    /* Tamaño minimo*/
+    min-height: 80vh;
+}
+
+
+.tituloPagina {
+    /* Para indicar en cada pagina donde estoy*/
+    text-align: center;
+    font-size: 36px;
+}
+
+/****************************** Fin Estilos globales *****************************/
+
+/****************************** Encabezado *****************************/
+
+.headerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* Fondo header */
+    background-image: linear-gradient(rgba(129, 87, 56, 0.7), rgba(129, 87, 56, 0.7)), url(../img/wooden-texture.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+/* Elementos */
+
+.numeroNotaria {
+    /*Fondo*/
+    background-color: #000;
+    /*Fuente*/
+    text-align: center;
+    font-weight: 300;
+    color: #ccc;
+}
+
+.membrete {
+
+    display: grid;
+    padding-left: 30px;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
+}
+
+.membrete a img {
+    width: 75px;
+}
+
+.textoMembrete h1 {
+    color: rgb(225, 171, 24);
+    font-size: xx-large;
+}
+
+.textoMembrete h4 {
+    color: rgb(225, 171, 24);
+}
+
+
+/***** Barra de Nevegacion ****/
+
+.headerNav {
+    padding-right: 10px;
+}
+
+.headerNav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.headerNav ul li {
+    display: inline-block;
+}
+
+.headerNav ul li a {
+    background-color: #575249;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.headerNav ul li a:hover {
+    background-color: #ddd;
+}
+
+/***** Fin Barra de Nevegacion ****/
+
+/*********** Fin Encabezado ********/
+
+/******** Pie de página****/
+
+
+
+.contenedorFooter {
+
+    /* Fondo footer*/
+    background-image: linear-gradient(rgba(120, 80, 51, 0.7), rgba(120, 80, 51, 0.7)), url(../img/wooden-texture.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: rgb(160, 123, 97);
+    /* color: rgb(198, 191, 186); */
+
+    display: grid;
+/*     grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 90% 10%; */
+
+    justify-content: space-evenly;
+    align-items: start;
+    grid-template-areas: "contactoGI mapaGI horarioGI"
+        "contactoGI mapaGI firmaGI";
+    padding: 1% 0 1% 0;
+}
+
+
+
+
+.footercards {
+    width: 250px;
+    color: rgb(244, 202, 88);
+}
+
+.footercards ul {
+    list-style: none;
+}
+
+.datosContacto {
+    grid-area: contactoGI;
+}
+
+.datosContacto img {
+    width: 25px;
+}
+
+.datosContacto h4 {
+    padding-left: 30px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.mapa {
+    text-align: center;
+    grid-area: mapaGI;
+    
+}
+
+.mapa iframe {
+    border-radius: 10px;
+    width: 200px;
+    height: 110px;
+    filter:sepia(70%)
+}
+
+.horario {
+    grid-area: horarioGI;
+}
+
+.horario ul li h4 {
+    font-weight: bolder;
+    text-decoration: underline;
+
+}
+
+.firma {
+    grid-area: firmaGI;
+}
+
+
+
+/* .footerNav {
+    text-align: center;
+} */
+
+
+/******** Fin Pie de página****/
+
+/******* Fin estilos Globales ***/
+
+
+
+/******** Pagina Index *********/
+
+
+.ordenaIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+
+/* Estilos para el contenedor de pestañas */
+.tabsContainer {
+
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #dddddde7;
+}
+
+/* Estilos para los botones de las pestañas */
+.tabButton {
+    /* color y forma*/
+    background-color: #575249e7;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+
+    /* texto     */
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(225, 171, 24);
+    font-size: x-large;
+
+}
+
+.tabButton :first-child {
+    padding-left: 15%;
+}
+
+.tabButton:hover {
+    background-color: #ddd;
+}
+
+/*** Estilos para el contenido de las tabs ***/
+
+/* Estilo para la imagen de las tabs*/
+.tabImg {
+    width: 90%;
+    /* height: auto; */
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+/* Estilo para el texto de las tabs*/
+.tabText {
+    /* Fondo */
+    background-color: #dddddde7;
+    padding: 1%;
+    /* fuente */
+    text-align: center;
+    color: #171614c7;
+}
+
+
+.timbreContacto img {
+    width: 70%;
+    padding-left: 15%;
+}
+
+
+/******** Fin Pagina Index *********/
+
+
+/******** Pagina tramites *********/
+
+.tramiteCard {
+    background-color: #ddd;
+    padding: 20px;
+    width: 300px;
+    margin: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.tramiteCard h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.tramiteCard p {
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+
+.tramiteCard img {
+    width: 30%;
+}
+
+.tramiteCard ul {
+    /* padding-left: 50px; */
+    margin-left: 50px;
+}
+
+.tramiteCard a {
+    /* margin-top: 1000px;
+text-align: center; */
+    width: 50%;
+    background-color: #575249;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 25%;
+    position: relative;
+    top: 10px;
+}
+
+.tramiteCard a:hover {
+    background-color: #ddd;
+    border: 1px solid #575249;
+}
+
+
+#buscaTramite {
+    float: right;
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 250px;
+    padding: 5px;
+}
+
+/******** Fin Pagina tramites *********/
+
+
+
+
+
+/******* Formulario de Contacto****/
+
+.formularioContacto {
+    /* Colores y forma*/
+    background-color: #ddddddbe;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    /* Tamaño y ubicacion */
+    width: 60%;
+    margin-left: 20%;
+    padding: 20px;
+
+    /* Grilla*/
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "formIzq formDer"
+        "timbreContacto formDer";
+
+    /* margin-bottom: 20px; */
+
+}
+
+
+.formDisplay {
+    /* display: inline-block; */
+    margin-top: 0px;
+    background-color: #5752498d;
+    color: whitesmoke;
+
+}
+
+
+.formIzq {
+    grid-area: formIzq;
+    /* width: 40%; */
+    margin-left: 0px;
+    padding-left: 10%;
+    border-top-left-radius: 10px;
+    width: 90%;
+
+
+}
+
+.timbreContacto {
+    grid-area: timbreContacto;
+    border-bottom-left-radius: 10px;
+    margin-left: 0px;
+    color: rgb(244, 202, 88);
+    text-align:center;
+    /* width: 40%; */
+}
+
+.timbreContacto img {
+    width: 200px;
+padding-right: 10%;
+}
+
+/* .timbreContacto  */
+
+.formDer {
+    grid-area: formDer;
+    /* width: 60%; */
+    /* height: 100%; */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.formComp {
+    width: 99%;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+form input::placeholder {
+    color: grey;
+}
+
+form textarea::placeholder {
+    color: gray;
+    font-family: 'Noto Sans', sans-serif;
+    padding-left: 5px;
+
+}
+
+
+.botones-form {
+    /* Tamaño y ubicacion */
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 10px;
+
+
+    /* Colores y forma*/
+    font-size: x-large;
+    background-color: #575249;
+    border-radius: 10px;
+    color: rgb(198, 156, 28);
+
+
+}
+
+.botones-form:hover {
+    background-color: #ddd;
+    border: 1px solid #575249;
+
+}
+
+
+/****** Fin Pagina Contacto**********/
+
+/********* Pagina Indices **********/
+
+.IDFechas {
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 30px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.IDCausantes {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.botonesID {
+    width: 30%;
+    font-size: medium;
+    margin-left: 12%;
+
+}
+
+.resultados {
+    margin-left: 10%;
+    margin-top: 10px;
+    width: 80%;
+    border: 2px grey solid;
+    border-radius: 10px;
+}
+
+.indiceDoc table {
+    border-collapse: collapse;
+}
+
+.indiceDoc th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.indiceDoc th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.indiceDoc td:hover {
+    background-color: #f5f5f5;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/********** Fin Pagina Indices ***********/
+
+
+
+/****************************** Pagina Enlaces *****************************/
+
+.enlaces {
+    width: 70%;
+    height: 400px;
+    background-color: #ddddddbe;
+    margin-left: 15%;
+    padding: 20px;
+}
+
+.enlaceCard {
+    /***** Forma*****/
+    height: 123;
+    width: 123;
+    display: inline-block;
+    /* padding: 20px; */
+    /* width: 300px; */
+    /* margin: 30px; */
+    /**** Color ****/
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+
+.enlaceCard img {
+    width: 123px;
+    height: 123px;
+    /* max-width: 100px;
+    max-height: 100px; */
+    /* padding: 5px; */
+}
+
+.enlaceCard a:hover {
+    background-color: #ddd;
+    border: 1px solid #575249;
+}
+
+aside {
+    background-color: #ddddddbe;
+    width: 70%;
+    margin-left: 15%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.noticia {
+    width: 80%;
+    background-color: #ddd;
+    margin: 15px;
+    margin-left: 10%;
+    border-radius: 10px;
+    border: 1px solid #575249;
+
+}
+
+/****************************** Fin pagina Enlaces *****************************/
