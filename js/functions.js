@@ -1,9 +1,9 @@
 function showTab(tabName) {
-    var i, tabcontent;
+    var i, tabContent;
 
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+    tabContent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
     }
 
     document.getElementById(tabName).style.display  = "block";
