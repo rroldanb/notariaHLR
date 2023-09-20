@@ -94,6 +94,7 @@ main {
 .textoMembrete h4 {
     color: rgb(225, 171, 24);
     margin-bottom: 0px;
+    font-size: medium;
 }
 
 .textoMembrete a {
@@ -104,17 +105,16 @@ main {
 
 
 
-.headerNav ul {
+.headerNavMenu {
     list-style: none;
-
     margin-bottom: 0;
 }
 
-.headerNav ul li {
+.headerNavItem {
     display: inline-block;
 }
 
-.headerNav ul li a {
+.headerNavLink {
     background-color: #575249;
     padding: 5px 10px;
     border-radius: 10px;
@@ -124,7 +124,7 @@ main {
     
 }
 
-.headerNav ul li a:hover {
+.headerNavLink:hover {
     background-color: rgb(244, 202, 88);
     color: #575249;
 }
@@ -133,9 +133,7 @@ main {
 
 /*********** Fin Encabezado ********/
 
-/******** Pie de página****/
-
-
+/********** Pie de página *******/
 
 .contenedorFooter {
 
@@ -145,36 +143,24 @@ main {
     background-size: cover;
     background-color: rgb(160, 123, 97);
 
-    display: grid;
-    justify-content: space-around;
-    align-items: start;
-    grid-template-areas: "contactoGI mapaGI horarioGI"
-        "contactoGI mapaGI firmaGI";
-    padding: 1% 0 1% 0;
 }
-
-
-
 
 .footercards {
-    width: fit-content;
     color: rgb(244, 202, 88);
 }
-
 .footercards ul {
     list-style: none;
 }
 
-.datosContacto {
-    grid-area: contactoGI;
+.datosContacto{
+    padding-left: 15%;
 }
 
 .datosContacto img {
     width: 25px;
 }
-
 .datosContacto h4 {
-    padding-left: 30px;
+    padding-left: 0px;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -187,9 +173,7 @@ main {
 .mapa {
     text-align: center;
     grid-area: mapaGI;
-
 }
-
 .mapa iframe {
     border-radius: 10px;
     width: 200px;
@@ -198,11 +182,10 @@ main {
 }
 
 .horario {
-    grid-area: horarioGI;
+    padding-bottom: 5%;
 }
 
 .horario h4 {
-    /* font-weight: bolder; */
     font-weight: bold;
     text-decoration: underline;
     padding-bottom: 3%;
@@ -215,18 +198,59 @@ main {
 }
 
 .firma {
-    grid-area: firmaGI;
     font-size: smaller;
+    margin-bottom: 0px;
+    padding-left: 90%;
+    
+}
+.firma p{
+    margin-bottom: 0%;
+    margin-top: 1rem;
 }
 
 
+#footerNav{
+    display: none;
+    background-image: linear-gradient(rgba(120, 80, 51, 0.7), rgba(120, 80, 51, 0.7)), url(../img/wooden-texture.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: rgb(160, 123, 97);
+}
 
-/* .footerNav {
-    text-align: center;
-} */
+@media only screen and (max-width: 768px)  {
+    #footerNav{
+        display: inline;
+    }
+}
 
+.footerNavMenu {
+    list-style: none;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
 
-/******** Fin Pie de página****/
+.footerNavItem {
+    margin-bottom: 10px;
+}
+
+.footerNavLink {
+    background-color: #575249;
+    padding: 5px 10px;
+
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(244, 202, 88);
+    font-size: large;
+    
+}
+
+.footerNavLink:hover {
+    background-color: rgb(244, 202, 88);
+    color: #575249;
+}
+
+/********** Fin Pie de página *******/
 
 /******* Fin estilos Globales ***/
 
@@ -253,16 +277,10 @@ main {
     border-radius: 10px;
     background-color: #dddddde7;
 
-
-/*test W3*/
-/* position: relative; */
-/* max-width: 800px; */
-/* margin: 0 auto; */
-
 }
 
 /****** Estilos para los botones de las pestañas ******/
-.tabButton {
+.nav-link {
     /* color y forma*/
     background-color: #575249e7;
     border: 1px solid #ccc;
@@ -276,10 +294,14 @@ main {
     font-weight: 400;
     color: rgb(225, 171, 24);
 }
-.tabButton :first-child {
+.nav-link :first-child {
     padding-left: 15%;
 }
-.tabButton:hover {
+.nav-link:hover {
+    background-color: rgb(244, 202, 88);
+    color: #b08940;
+}
+.nav-pills .nav-link.active{
     background-color: rgb(244, 202, 88);
     color: #575249;
 }
@@ -320,7 +342,8 @@ main {
 }
 
 .tabContent .tabText {
-    position: absolute;
+    /* position: absolute; */
+    max-height: 20%;
     bottom: 0;
     background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
@@ -330,10 +353,21 @@ main {
     padding: 20px;
 }
 
+.fichasSinTabs{
+    display:none
+    /* width: 90%; */
+}
 
-
-
-
+@media only screen and (max-width: 768px) {
+    .fichasSinTabs{
+        display:flex;
+        flex-direction: column;
+        margin-left: 10%;
+        width: 80%;
+    }
+.tabsContainer{
+    display: none;
+}
 /******** Fin Pagina Index *********/
 
 
