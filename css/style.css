@@ -206,7 +206,7 @@ p{
     background-image: linear-gradient(rgba(120, 80, 51, 0.7), rgba(120, 80, 51, 0.7)), url(../img/wooden-texture.svg);
     background-repeat: repeat;
     background-size: cover;
-    /* background-color: rgb(160, 123, 97); */
+
 
 }
 
@@ -231,7 +231,6 @@ p{
 }
 
 .datosContacto h4 {
-    /* margin-left: -1em; */
     font-weight: bold;
     text-decoration: underline;
 }
@@ -279,7 +278,6 @@ p{
 }
 
 .firma p {
-    /* margin-bottom: 0%; */
     margin-top: 0rem;
 }
 
@@ -309,7 +307,6 @@ p{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* width: 90%; */
 }
 
 .footerNavItem {
@@ -445,7 +442,6 @@ p{
 
 .fichasSinTabs {
     display: none
-        /* width: 90%; */
 }
 
 @media only screen and (max-width: 768px) {
@@ -466,63 +462,29 @@ p{
 
 /******** Pagina tramites *********/
 
-.tramiteCard {
-    background-color: #ddd;
-    padding: 20px;
-    width: 300px;
-    margin: 30px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+.tramitesContainerGral{
+    display: flex;
+    flex-direction: column;
+}
+
+#buscaTramite {
+    float: right;
+    margin-right: 5.5%;
     border-radius: 10px;
-    display: inline-block;
-}
-
-.tramiteCard h3 {
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.tramiteCard p {
-    font-weight: bold;
-    margin-left: 35px;
-}
-
-
-.tramiteCard img {
-    width: 30%;
-}
-
-.tramiteCard ul {
-    /* padding-left: 50px; */
-    margin-left: 50px;
-}
-
-.tramiteCard a {
-    /* margin-top: 1000px;
-text-align: center; */
-    width: 50%;
-    background-color: #575249;
-    border-radius: 10px;
+    width: 15em;
     padding: 5px;
-    margin-left: 25%;
-    position: relative;
-    top: 10px;
 }
 
-.tramiteCard a:hover {
-    background-color: #ddd;
-    border: 1px solid #575249;
-}
-
-
-/* test cards*/
 #tramiteContainer{
     margin-left: 5%;
     margin-right: 5%;
-    /* width: 80em; */
+    margin-top: 1em;
 }
 
 .card{
-    border: solid 1px #564b69;;
+    border: solid 1px #564b69;
+    margin-top: 10px;
+    background-color: #ddddddea;
 }
 
 .card img{
@@ -533,19 +495,10 @@ text-align: center; */
 }
 
 .card-footer{
-    /* margin-top: 1000px;
-text-align: center; */
-    /* width: 50%; */
     background-color: #575249;
     text-align: center;
     color: rgb(244, 202, 88);
-    /* color: rgb(244, 202, 88); */
-    /* border-radius: 10px; */
-    /* 
-    padding: 5px;
-    margin-left: 25%;
-    position: relative;
-    top: 10px; */
+    border: solid 1px rgb(244, 202, 88);
 }
 
 .card-footer:hover {
@@ -554,27 +507,7 @@ text-align: center; */
     background-color: rgb(244, 202, 88);
 }
 
-.card-footer a {
-    background-color: #575249;
-    color: rgb(244, 202, 88);
-    width: 100%;
-}
 
-.card-footer a:hover {
-    color: #575249;
-    background-color: rgb(244, 202, 88);
-}
-
-
-
-
-#buscaTramite {
-    float: right;
-    margin-right: 5.5%;
-    border-radius: 10px;
-    width: 15em;
-    padding: 5px;
-}
 
 /******** Fin Pagina tramites *********/
 
