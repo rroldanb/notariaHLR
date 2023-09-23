@@ -37,7 +37,9 @@ p{
 .tituloPagina {
     /* Para indicar en cada pagina donde estoy*/
     text-align: center;
-    font-size: 36px;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-top: 1%;
 }
 
 /****************************** Fin Estilos globales *****************************/
@@ -169,6 +171,7 @@ p{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        z-index: 1;
     }
 
     .headerNavMenu.active {
@@ -280,6 +283,9 @@ p{
     margin-top: 0rem;
 }
 
+.row{
+    margin-right: 0;
+}
 
 #footerNav {
     display: none;
@@ -313,7 +319,7 @@ p{
 .footerNavLink {
     background-color: #575249;
     padding: 5px 10px;
-
+    border: 1px solid rgb(236, 183, 36);
     border-radius: 10px;
     text-decoration: none;
     color: rgb(244, 202, 88);
@@ -324,6 +330,7 @@ p{
 .footerNavLink:hover {
     background-color: rgb(244, 202, 88);
     color: #575249;
+    border: 1px solid #575249;
 }
 
 
@@ -507,11 +514,65 @@ text-align: center; */
 }
 
 
+/* test cards*/
+#tramiteContainer{
+    margin-left: 5%;
+    margin-right: 5%;
+    /* width: 80em; */
+}
+
+.card{
+    border: solid 1px #564b69;;
+}
+
+.card img{
+    height: 200px;
+}
+.card-title{
+    font-weight: bold;
+}
+
+.card-footer{
+    /* margin-top: 1000px;
+text-align: center; */
+    /* width: 50%; */
+    background-color: #575249;
+    text-align: center;
+    color: rgb(244, 202, 88);
+    /* color: rgb(244, 202, 88); */
+    /* border-radius: 10px; */
+    /* 
+    padding: 5px;
+    margin-left: 25%;
+    position: relative;
+    top: 10px; */
+}
+
+.card-footer:hover {
+    border: 1px solid #575249;
+    color: #575249;
+    background-color: rgb(244, 202, 88);
+}
+
+.card-footer a {
+    background-color: #575249;
+    color: rgb(244, 202, 88);
+    width: 100%;
+}
+
+.card-footer a:hover {
+    color: #575249;
+    background-color: rgb(244, 202, 88);
+}
+
+
+
+
 #buscaTramite {
     float: right;
-    margin-right: 20px;
+    margin-right: 5.5%;
     border-radius: 10px;
-    width: 250px;
+    width: 15em;
     padding: 5px;
 }
 
@@ -561,7 +622,7 @@ text-align: center; */
     margin-left: 0px;
     padding-left: 10%;
     border-top-left-radius: 10px;
-    width: 90%;
+
 
 
 }
