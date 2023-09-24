@@ -26,121 +26,160 @@
 <body>
 
     <!-- <section class="flexIndex"> -->
-        <!-- Header-->
-        <header>
-            <!-- Pre-encabezado-->
-            <div class="numeroNotaria">
-                <h4>Cuarta Notaría de Rapa Nui</h4>
-            </div>
-            <!-- Encabezado -->
-            <section class="headerContainer">
-                <!--Membrete-->
-                <div class="membrete">
-                    <div class="logoMembrete">
-                        <a href="../index.html"><img src="../img/moai.png" alt="Logo Notaria Juan Pérez"></a>
-                    </div>
-                    <div class="textoMembrete">
-                        <a href="../index.html">
-                            <h1>Juan Pérez González</h1>
-                        </a>
-                        <a href="../index.html">
-                            <h4>Notario Público de Rapa Nui</h4>
-                        </a>
-                    </div>
+    <!-- Header-->
+    <header>
+        <!-- Pre-encabezado-->
+        <div class="numeroNotaria">
+            <h4>Cuarta Notaría de Rapa Nui</h4>
+        </div>
+        <!-- Encabezado -->
+        <section class="headerContainer">
+            <!--Membrete-->
+            <div class="membrete">
+                <div class="logoMembrete">
+                    <a href="../index.html"><img src="../img/moai.png" alt="Logo Notaria Juan Pérez"></a>
                 </div>
-                <!-- Navbar -->
-                <nav class="headerNav">
-                    <ul class="headerNavMenu">
-                        <li class="headerNavItem">
-                            <a href="../index.html" class="headerNavLink">Inicio</a>
-                        </li>
-                        <li class="headerNavItem">
-                            <a href="../pages/tramites.html" class="headerNavLink"> Trámites </a>
-                        </li>
-                        <li class="headerNavItem">
-                            <a href="#" class="headerNavLink">Consulta Índice</a>
-                        </li>
-                        <li class="headerNavItem">
-                            <a href="../pages/enlaces.html" class="headerNavLink">Enlaces</a>
-                        </li>
-                        <li class="headerNavItem">
-                            <a href="../pages/contacto.html" class="headerNavLink"> Contacto </a>
-                        </li>
-                    </ul>
-                    <div class="hamburgersa" id="lineas3">&#9776;</div>
-                </nav>
-            </section>
-        </header>
+                <div class="textoMembrete">
+                    <a href="../index.html">
+                        <h1>Juan Pérez González</h1>
+                    </a>
+                    <a href="../index.html">
+                        <h4>Notario Público de Rapa Nui</h4>
+                    </a>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <nav class="headerNav">
+                <ul class="headerNavMenu">
+                    <li class="headerNavItem">
+                        <a href="../index.html" class="headerNavLink">Inicio</a>
+                    </li>
+                    <li class="headerNavItem">
+                        <a href="../pages/tramites.html" class="headerNavLink"> Trámites </a>
+                    </li>
+                    <li class="headerNavItem">
+                        <a href="#" class="headerNavLink">Consulta Índice</a>
+                    </li>
+                    <li class="headerNavItem">
+                        <a href="../pages/enlaces.html" class="headerNavLink">Enlaces</a>
+                    </li>
+                    <li class="headerNavItem">
+                        <a href="../pages/contacto.html" class="headerNavLink"> Contacto </a>
+                    </li>
+                </ul>
+                <div class="hamburgersa" id="lineas3">&#9776;</div>
+            </nav>
+        </section>
+    </header>
 
     <main>
 
 
         <h2 class="tituloPagina">Índice de Documentos</h2>
 
-        <form class="indiceDoc">
-            <label for="desde" class="IDFechas">Desde:</label>
-            <input type="date" name="desde" id="desde" class="IDFechas">
-            <label for="hasta" class="IDFechas"></label>Hasta:</label>
-            <input type="date" name="hasta" id="hasta" class="IDFechas">
-            <br>
-            <label for="causante1" class="IDCausantes">Apellidos Causante 1</label>
-            <input type="text" name="causante1" id="causante1" class="IDCausantes">
-            <br>
-            <label for="causante2" class="IDCausantes">Apellidos Causante 2</label>
-
-            <input type="text" name="causante2" id="causante2" class="IDCausantes">
-            <br>
-            <input type="submit" value="Buscar" name="buscaIndice" id="buscaIndice" class="botones-form botonesID">
-            <input type="reset" value="Reiniciar" class="botonesID botones-form">
-            <table class="resultados">
-                <thead>
-                    <th>Fecha</th>
-                    <th>Repertorio</th>
-                    <th>Materia</th>
-                    <th>Causante 1</th>
-                    <th>Causante 2</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>_</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>_</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>_</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>_</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>_</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
+        <div class="container_">
+            <form action="" class="indiceDoc ">
+                <div class="indiceFiltros">
+                    <div class="fechaDesde">
+                        <label for="desde" class="indiceFechas1">Desde:</label>
+                        <input type="date" name="desde" id="desde" class="indiceFechas1">
+                    </div>
+                    <div class="fechaHasta">
+                        <label for="hasta" class="indiceFechas2">Hasta:</label>
+                        <input type="date" name="hasta" id="hasta" class="indiceFechas2">
+                    </div>
+                    <div class="materiaCont">
+                        <label for="materia" class="materiaFilter">Materia:</label>
+                        <select id="materia" name="materia" class="materiaFilter">
+                            <option value="none">Seleccione Materia</option>
+                            <option value="CES">CESION DE DERECHOS</option>
+                            <option value="CVT">COMPRAVENTA</option>
+                            <option value="MDJ">MANDATO JUDICIAL</option>
+                            <option value="MGB">MANDATO GENERAL BANCARIO</option>
+                        </select>
+                    </div>
+                </div>
 
 
-            </table>
-        </form>
+                <div class="IndiceCausantesCont">
+                    <div id="causante1Cont">
+                        <label for="causante1" class="indiceCausantes">Apellidos Concurrente 1</label>
+                        <input type="text" name="causante1" id="causante1" class="indiceCausantes">
+                    </div>
+                    <div id="causante2Cont">
+                        <label for="causante2" class="indiceCausantes">Apellidos Concurrente 2</label>
+                        <input type="text" name="causante2" id="causante2" class="indiceCausantes">
+                    </div>
+
+                </div>
+
+
+
+                <div class="indiceNoEditable">
+                    <div class="botonesIndiceCont">
+                        <input type="reset" value="Reiniciar" class=" botonesIndice">
+                        <input type="submit" value="Buscar" name="buscaIndice" id="buscaIndice" class="botonesIndice">
+
+                    </div>
+
+                    <div class="resultados">
+                        <table class="miTabla">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Repertorio</th>
+                                    <th>Materia</th>
+                                    <th>Concurrente 1</th>
+                                    <th>Concurrente 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>18/08/2012</td>
+                                    <td>234</td>
+                                    <td>COMPRAVENTA</td>
+                                    <td>GUERRERO GUTIERREZ RUBEN BERNARDO</td>
+                                    <td>CARRENO ROSEVEAR ALFRDO EDUARDO</td>
+                                </tr>
+                                <tr>
+                                    <td>01/07/2018</td>
+                                    <td>742</td>
+                                    <td>CESION DE DERECHOS</td>
+                                    <td>FUNDACION PARA EL APRENDZADO INCLUSIVO CULTURAL</td>
+                                    <td>VAZQUEZ RAMIREZ PATRICIO</td>
+                                </tr>
+                                <tr>
+                                    <td>04/04/2021</td>
+                                    <td>689</td>
+                                    <td>MANDATO GENERAL BANCARIO</td>
+                                    <td>VERGARA VALLADARES CECILIA DEL C</td>
+                                    <td>TERAN FIGUEROA HERNAN ALFREDO</td>
+                                </tr>
+                                <tr>
+                                    <td>04/07/2022</td>
+                                    <td>446</td>
+                                    <td>COMPRAVENTA</td>
+                                    <td>VALENCIA OJEDA MARGARITA</td>
+                                    <td>CONTRERAS TORRES KATHERINE</td>
+                                </tr>
+                                <tr>
+                                    <td>08/09/2015</td>
+                                    <td>665</td>
+                                    <td>MANDATO JUDICIAL</td>
+                                    <td>RIQUELME VASQUEZ TERESA DEL P</td>
+                                    <td>CAMPOS SEPULVEDA ELSA</td>
+                                </tr>
+                            </tbody>
+
+
+                        </table>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+
 
 
     </main>
@@ -227,15 +266,15 @@
         </Section>
 
     </footer>
-<!-- </section> -->
+    <!-- </section> -->
 
-<!-- Mi script-->
-<script src="../js/functions.js"></script>
+    <!-- Mi script-->
+    <script src="../js/functions.js"></script>
 
-<!-- Javascript Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    <!-- Javascript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
