@@ -30,7 +30,6 @@ function closeMenu() {
     estadoActual = 1;
     hamburgersa.classList.remove("active");
     headerNavMenu.classList.remove("active");    
-    fichasSinTabs.style.marginTop = "20px";
 }
 
 
@@ -42,20 +41,9 @@ lineas3.addEventListener("click", function () {
     if (estadoActual === 1) {
         lineas3.innerHTML = "&#10005";
         estadoActual = 2;
-        fichasSinTabs.style.marginTop = "200px";
     } else {
         lineas3.innerHTML = "&#9776";
         estadoActual = 1;
-        fichasSinTabs.style.marginTop = "20px";
     }
 });
 
-// Obtén una referencia al botón y al div
-const botonCambiarMargen = document.getElementById("cambiarMargen");
-const miDiv = document.getElementById("miDiv");
-
-// Agrega un manejador de clic al botón
-botonCambiarMargen.addEventListener("click", function() {
-    // Cambia el valor de margin-top del div
-    miDiv.style.marginTop = "20px";
-});
