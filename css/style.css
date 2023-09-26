@@ -572,12 +572,9 @@ p {
 .timbreContacto {
     grid-area: timbreContacto;
     border-bottom-left-radius: 10px;
-    /* margin-left: 0px; */
     color: rgb(244, 202, 88);
     text-align: center;
     margin: 1em;
-    /* background-color: #5752498d; */
-
     box-shadow: #5752498d 3px 3px 6px 0px inset, #c2b8a68d -3px -3px 6px 1px inset;
 }
 
@@ -684,6 +681,13 @@ p {
 
     .contactoInputs {
         width: 100%;
+    }
+
+    #horarioContacto{
+        display: none;
+    }
+    .datosContactoForm{
+        display: none;
     }
 }
 
