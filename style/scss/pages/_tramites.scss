@@ -1,0 +1,19 @@
+
+.tramitesContainerGral {
+    display: flex;
+    flex-direction: column;
+}
+
+#buscaTramite {
+    float: right;
+    margin-right: 5.5%;
+    border-radius: 10px;
+    width: 15em;
+    padding: 5px;
+}
+
+#tramiteContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1em;
+}

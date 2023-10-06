@@ -1,0 +1,21 @@
+
+//BASE
+@import './base/base';
+@import './base/typography';
+@import './base/utils';
+//LAYOUTS
+@import './layouts/base-layouts';
+@import './layouts/header';
+@import './layouts/footer';
+//COMPONENTS
+@import './components/tabs';
+@import './components/cards';
+//PAGES
+@import './pages/home';
+@import './pages/tramites';
+@import './pages/indice-documentos';
+@import './pages/enlaces';
+@import './pages/contacto';
+// VENDORS
+@import './vendors';
+

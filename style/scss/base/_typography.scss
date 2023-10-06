@@ -1,0 +1,58 @@
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(244, 202, 88);
+    font-weight: 500;
+    line-height: 1.25;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1 {
+    margin: 32px 0;
+    font-size: 48px;
+}
+
+h2 {
+    margin: 32px 0;
+    font-size: 36px;
+}
+
+h3 {
+    margin: 24px 0;
+    font-size: 30px;
+}
+
+h4 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+h5 {
+    margin: 18px 0;
+    font-size: 20px;
+}
+
+h6 {
+    margin: 16px 0;
+    font-size: 18px;
+}
+
+p {
+    color: #f8f8f8;
+    margin: 16px 0;
+    font-weight: 1.5;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

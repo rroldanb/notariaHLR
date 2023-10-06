@@ -1,0 +1,54 @@
+html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+body {
+    position: relative;
+    min-height: 100vh;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Noto Sans", sans-serif;
+    background-color: #f1f5f9;
+
+    /**** Imagen de fondo para todo el sitio ***/
+    background-image: url(../../img/moais.jpeg);
+    background-size: cover;
+}
+
+
+
+/** DEFAULT STYLES */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(244, 202, 88);
+}
+
+.tituloPagina {
+    /* Para indicar la página que estoy mostrando*/
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: black;
+}

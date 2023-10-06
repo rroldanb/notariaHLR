@@ -1,0 +1,109 @@
+
+// Estilos para el contenedor de pestañas 
+.tabsContainer {
+    margin-top: 15%;
+    margin-left: 15%;
+    width: 75%;
+    max-width: 1800px;
+    height: 75%;
+}
+
+// Estilo Pestañas
+
+.nav-link {
+    // color y forma
+    background-color: #575249e7;
+    margin-right: 2px;
+    cursor: pointer;
+    padding: 5px 10px;
+
+    // texto 
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(225, 171, 24);
+}
+
+
+.nav-link:hover {
+    background-color: #837e74e7;
+    color: rgb(244, 202, 88);
+}
+
+.nav-pills .nav-link.active {
+    background-color: rgb(244, 202, 88);
+    color: #575249;
+}
+
+/****** Estilos para el contenido de las tabs ******/
+
+
+.tabContent {
+    position: relative;
+    margin: 0 auto;
+}
+
+/**** Estilo para la imagen de las tabs ****/
+.tabImg {
+    width: 100%;
+}
+
+
+/**** Estilo para el texto de las tabs****/
+
+.tabContent .tabText {
+    /* position: absolute; */
+    max-height: 20%;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.9);
+    /* Black background with 0.5 opacity */
+
+    color: #f1f1f1;
+    width: 100%;
+    padding: 1em;
+}
+
+.tabContent h2 {
+    margin: 0px;
+    font-weight: bold;
+}
+
+.tabContent p {
+    margin: 0px;
+    text-align: justify;
+}
+
+
+.fichasSinTabs {
+    display: none
+}
+
+@media only screen and (max-width: 768px) {
+    .fichasSinTabs {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        width: 100%;
+        padding-top: 15%;
+    }
+
+    .tabsContainer {
+        display: none;
+    }
+}
+    @media only screen and (max-width: 500px) {
+        .fichasSinTabs {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0%;
+            width: 100%;
+            padding-top: 40%;
+        }
+    
+        .tabsContainer {
+            display: none;
+        }
+
+}

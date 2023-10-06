@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-419">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -16,24 +16,25 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- Link mi CSS-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style/css/style.css">
 
     <!-- Nombre de la pagina-->
-    <title>Notaria Juan Pérez González Inicio</title>
+    <title>Notaria Juan Pérez González | Inicio</title>
+    <link rel="shortcut icon" href="./img/moai-crema.jpg" type="image/x-icon">
 
 </head>
 
-<body>
+<body class="flexIndex container base-layout">
 
-    <section class="flexIndex">
+    <!-- <section > -->
         <!-- Header-->
-        <header>
+        <header class="base-header">
             <!-- Pre-encabezado-->
             <div class="numeroNotaria">
                 <h4>Cuarta Notaría de Rapa Nui</h4>
             </div>
             <!-- Encabezado -->
-            <section class="headerContainer">
+            <section class="headerContainer flex-container wrap">
                 <!--Membrete-->
                 <div class="membrete">
 
@@ -59,7 +60,7 @@
                             <a href="./pages/tramites.html" class="headerNavLink"> Trámites </a>
                         </li>
                         <li class="headerNavItem">
-                            <a href="./pages/indiceDocumentos.html" class="headerNavLink">Consulta Índice</a>
+                            <a href="./pages/indice-documentos.html" class="headerNavLink">Consulta Índice</a>
                         </li>
                         <li class="headerNavItem">
                             <a href="./pages/enlaces.html" class="headerNavLink">Enlaces</a>
@@ -74,13 +75,13 @@
         </header>
 
         <!-- Main: contenido principal -->
-        <main>
-            <div class="tabsContainer">
+        <main class="base-content">
+            <div class="tabsContainer ">
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                            data-bs-target="#notarioTab" type="button" role="tab" aria-controls="notarioTab"
-                            aria-selected="true">Notario</button>
+                        <button class="nav-link active" id="pills-oficina-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-oficina" type="button" role="tab" aria-controls="pills-oficina"
+                            aria-selected="false">Oficinas</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
@@ -88,13 +89,31 @@
                             aria-selected="false">Equipo</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-oficina-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-oficina" type="button" role="tab" aria-controls="pills-oficina"
-                            aria-selected="false">Oficinas</button>
+                        <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#notarioTab" type="button" role="tab" aria-controls="notarioTab"
+                            aria-selected="true">Notario</button>
                     </li>
+
                 </ul>
                 <div class="tab-content tabContent" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="notarioTab" role="tabpanel"
+                    <div class="tab-pane fade show active" id="pills-oficina" role="tabpanel" aria-labelledby="pills-oficina-tab"
+                        tabindex="0">
+                        <img class="tabImg" src="./img/fachada-oficinas.jpeg" alt="Foto Notaría">
+                        <div class="tabText">
+                            <h2 class="tabTitulo">Nuestras oficinas</h2>
+                            <p class="tabDetalle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                                repellendus, eligendi quo temporibus officia earum deserunt delectus vitae libero?
+                                Officiis ullam, laboriosam quae animi eveniet dolorum temporibus amet ipsum quam ipsa
+                                quisquam voluptatum? Id dignissimos aperiam expedita rem tempore. Quibusdam totam
+                                numquam, quod veritatis sint natus nobis impedit voluptatum porro, nostrum eum dolore.
+                                Consequatur praesentium, laudantium dolores, eius unde iste ut eligendi tempore eveniet
+                                tenetur error nulla velit eos quae ipsa quaerat qui repellat nihil quod! Sit cum quo
+                                natus.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="notarioTab" role="tabpanel"
                         aria-labelledby="pills-home-tab" tabindex="0">
                         <img class="tabImg" src="./img/juanPerezGonzalez.jpeg" alt="Foto Notario Juan Pérez">
                         <div class="tabText">
@@ -121,12 +140,16 @@
                             </p>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-oficina" role="tabpanel" aria-labelledby="pills-oficina-tab"
-                        tabindex="0">
-                        <img class="tabImg" src="./img/ia_office.jpeg" alt="Foto Notaría">
-                        <div class="tabText">
-                            <h2 class="tabTitulo">Nuestras oficinas</h2>
-                            <p class="tabDetalle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                </div>
+            </div>
+            <div class="fichasSinTabs container">
+
+                <div class="tabContent  " id="oficinasTab2">
+                    <img class="tabImg" src="./img/fachada-oficinas.jpeg" alt="Foto Notaría">
+                    <details class="tabText">
+                        <summary class="tabTitulo"><h2>Nuestras oficinas</h2></summary>
+                        <div class="tabDetalle">
+                            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur
                                 repellendus, eligendi quo temporibus officia earum deserunt delectus vitae libero?
                                 Officiis ullam, laboriosam quae animi eveniet dolorum temporibus amet ipsum quam ipsa
                                 quisquam voluptatum? Id dignissimos aperiam expedita rem tempore. Quibusdam totam
@@ -136,10 +159,31 @@
                                 natus.
                             </p>
                         </div>
+                    </details>
+                </div>
+
+                <div class="tabContent " id="equipoTab2">
+                    <img class="tabImg" src="./img/conmuchasmanos.jpeg" alt="Foto Notaría">
+                    <div class="tabText">
+                        <h2 class="tabTitulo">Nuestro Equipo</h2>
+                        <p class="tabDetalle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolor
+                            architecto
+                            quasi fuga nihil
+                            placeat
+                            sequi, voluptatibus nemo ea saepe blanditiis maxime quo fugit, ipsam iure iusto culpa
+                            nesciunt
+                            commodi!
+                            Illo voluptatum repellat voluptatem corporis earum ex recusandae ipsum, minima, tempora
+                            non
+                            nisi
+                            molestias ullam dignissimos error illum magnam eum iusto itaque sint dolorum dolor?
+                            Repellat
+                            hic
+                            temporibus nostrum nemo.
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="fichasSinTabs">
+
                 <div class="tabContent " id="notarioTab2">
                     <img class="tabImg" src="./img/juanPerezGonzalez.jpeg" alt="Foto Notario Juan Pérez">
                     <div class="tabText">
@@ -161,57 +205,13 @@
                             temporibus nostrum nemo.
                         </p>
                     </div>
-
                 </div>
 
-                <div class="tabContent " id="equipoTab2">
-                    <img class="tabImg" src="./img/conmuchasmanos.jpeg" alt="Foto Notaría">
-                    <div class="tabText">
-                        <h2 class="tabTitulo">Nuestros colaboradores</h2>
-                        <p class="tabDetalle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolor
-                            architecto
-                            quasi fuga nihil
-                            placeat
-                            sequi, voluptatibus nemo ea saepe blanditiis maxime quo fugit, ipsam iure iusto culpa
-                            nesciunt
-                            commodi!
-                            Illo voluptatum repellat voluptatem corporis earum ex recusandae ipsum, minima, tempora
-                            non
-                            nisi
-                            molestias ullam dignissimos error illum magnam eum iusto itaque sint dolorum dolor?
-                            Repellat
-                            hic
-                            temporibus nostrum nemo.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="tabContent  " id="oficinasTab2">
-                    <img class="tabImg" src="./img/ia_office.jpeg" alt="Foto Notaría">
-                    <div class="tabText">
-                        <h2 class="tabTitulo">Nuestras oficinas</h2>
-                        <p class="tabDetalle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolor
-                            architecto
-                            quasi fuga nihil
-                            placeat
-                            sequi, voluptatibus nemo ea saepe blanditiis maxime quo fugit, ipsam iure iusto culpa
-                            nesciunt
-                            commodi!
-                            Illo voluptatum repellat voluptatem corporis earum ex recusandae ipsum, minima, tempora
-                            non
-                            nisi
-                            molestias ullam dignissimos error illum magnam eum iusto itaque sint dolorum dolor?
-                            Repellat
-                            hic
-                            temporibus nostrum nemo.
-                        </p>
-                    </div>
-                </div>
             </div>
         </main>
 
-        <footer>
-            <Section class="contenedorFooter .container-fluid text-center">
+        <footer class="base-footer">
+            <Section class="container">
                 <div class="row">
                     <!-- Horario -->
                     <div class="horario footercards col-lg-4 col-md-6 col-sm-12">
@@ -292,7 +292,7 @@
             </Section>
 
         </footer>
-    </section>
+    <!-- </section> -->
 
     <!-- Mi script-->
     <script src="./js/functions.js"></script>

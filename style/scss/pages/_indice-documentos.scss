@@ -1,0 +1,137 @@
+
+.indiceDoc {
+    border: #000 solid 1px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: #5752498d;
+    border-radius: 10px;
+}
+
+.indiceDoc label {
+    color: white;
+}
+
+
+
+
+.indiceFiltros {
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 1em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.indiceFechas1 {
+    display: inline-block;
+}
+
+.indiceFechas2 {
+    display: inline-block;
+}
+
+#materia {
+    width: 10.2em;
+}
+
+.IndiceCausantesCont {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.indiceNoEditable {
+    margin-top: 1em;
+    background-color: #5752498d;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.indiceCausantes {
+    width: 10em;
+    /* margin-left: 10%; */
+    margin-top: 0.5em;
+    font-family: 'Noto Sans', sans-serif;
+    display: block;
+}
+
+
+.botonesIndiceCont {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.botonesIndice {
+    /* Tamaño y ubicacion */
+    width: 9em;
+    margin-top: 10px;
+    padding: 5px 10px;
+    /* Colores y forma*/
+    font-size: large;
+    background-color: #575249;
+    border-radius: 10px;
+    color: rgb(244, 202, 88);
+}
+
+
+.botonesIndice:hover {
+    background-color: rgb(244, 202, 88);
+    border: 1px solid #575249;
+    color: #575249;
+}
+
+
+.resultados {
+    margin-left: 10%;
+    margin-top: 1em;
+    /* margin-bottom: 1em; */
+    width: 80%;
+    border: 1px solid #575249;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 70em;
+    overflow-x: scroll;
+    overflow-wrap: break-word;
+    overflow: scroll;
+}
+
+
+
+.indiceDoc th {
+    background-color: #000;
+    color: white;
+    background-color: #575249;
+    color: rgb(244, 202, 88);
+}
+
+.indiceDoc th,
+td {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 8px;
+}
+
+.indiceDoc tr:nth-child(even) {
+    background-color: rgba(220, 220, 220, 0.9);
+}
+
+.miTabla td:first-child {
+    width: 7em;
+}
+
+.miTabla td:nth-child(2) {
+    width: 6em;
+}
+
+.miTabla td:nth-child(3) {
+    width: 9em;
+}
+
+.miTabla td:nth-child(4) {
+    width: 24em;
+}
+
+.miTabla td:last-child {
+    width: 24em;
+}

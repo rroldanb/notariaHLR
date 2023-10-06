@@ -1,0 +1,153 @@
+.headerContainer {
+    justify-content: space-around;
+    /* Fondo header */
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+/******* Elementos header *******/
+
+
+/*** Pre Encabez<do ***/
+.numeroNotaria {
+    background-color: #000;
+    text-align: center;
+}
+
+.numeroNotaria h4 {
+    font-weight: bold;
+    font-size: large;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #b7b7b7;
+}
+
+/*** Logo ***/
+
+.membrete {
+    display: grid;
+    padding-left: 30px;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
+}
+
+.membrete a img {
+    width: 75px;
+    height: 80px;
+}
+
+.textoMembrete h1 {
+    color: rgb(225, 171, 24);
+    font-size: xx-large;
+    margin-bottom: 0px;
+}
+
+.textoMembrete h4 {
+    color: rgb(225, 171, 24);
+    margin-bottom: 0px;
+    font-size: medium;
+}
+
+.textoMembrete a {
+    text-decoration: none;
+}
+
+/***** NAVBAR Encabezado ****/
+
+
+.headerNavMenu {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.headerNavItem {
+    display: inline-block;
+}
+
+.headerNavLink {
+    background-color: #575249;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(244, 202, 88);
+    font-size: large;
+}
+
+.headerNavLink:hover {
+    background-color: rgb(244, 202, 88);
+    color: #575249;
+}
+
+/*** Menu hamburgesa ***/
+
+.hamburgersa {
+    display: none;
+    font-size: 3em;
+    color: rgb(225, 171, 24);
+}
+
+
+
+/******** media queries ***/
+@media only screen and (max-width: 620px) {
+    .headerNavMenu {
+        position: fixed;
+        left: -100%;
+
+        flex-direction: column;
+        background-color: #57524963;
+        width: 70%;
+        margin-left: 30%;
+        padding-right: 5%;
+        border-radius: 10px;
+        text-align: right;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        top: 7rem;
+        z-index: 999;
+    }
+
+    .headerNavMenu.active {
+        left: 0;
+    }
+
+    .headerNavItem {
+        margin: 0.3rem 0;
+    }
+
+    .hamburgersa {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburgersa:hover {
+        background-color: rgb(244, 202, 88);
+        color: #575249;
+        border: 1px solid #575249;
+        border-radius: 5px;
+        padding: 0px 5px 5px 5px;
+    }
+
+}
+
+@media only screen and (max-width: 453px) {
+    .headerNavMenu {
+        top: 12rem;
+    }
+}
+
+
+@media only screen and (max-width: 326px) {
+    .headerNavMenu {
+        top: 13rem;
+    }
+}
+
+/***** Fin Barra de Nevegacion ****/

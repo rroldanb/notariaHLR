@@ -1,0 +1,11 @@
+{
+  "name": "notaria_juan-perez",
+  "version": "1.0.0",
+  "description": "Curso CoderHouse Desarrollo Web comision dw-58465 | Entrega 3",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Ruben Roldan",
+  "dependencies": {
+    "sanitize.css": "^13.0.0"
+  }
+}

@@ -1,0 +1,26 @@
+.card {
+    border: solid 1px #564b69;
+    margin-top: 10px;
+    background-color: #ddddddea;
+}
+
+.card img {
+    height: 200px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-footer {
+    background-color: #575249;
+    text-align: center;
+    color: rgb(244, 202, 88);
+}
+
+.card-footer:hover {
+    border: 1px solid #575249;
+    color: #575249;
+    background-color: rgb(244, 202, 88);
+}
+
