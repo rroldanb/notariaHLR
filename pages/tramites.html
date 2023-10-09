@@ -24,10 +24,8 @@
 
 </head>
 
-<body>
+<body class=" container base-layout">
 
-
-    <!-- Header-->
     <header class="base-header">
         <!-- Pre-encabezado-->
         <div class="pre-header">
@@ -74,33 +72,42 @@
         </section>
     </header>
 
-    <main>
+    <main class="base-content">
 
+        <!-- Titulo -->
+        <section class="hero-section">
+            <div class="container">
+                <h2 class="hero-tittle">Guía de Trámites Recurrentes</h2>
+            </div>
+        </section>
 
-        <div class="tramitesContainerGral">
+        <div class="container">
+            <div class="row">
+                <input type="search" placeholder="Buscar" id="buscaTramite" class="col">
+            </div>
 
-            <section id="encabezadoTramites">
-                <h2 class="tituloPagina">Guía de Trámites Recurrentes</h2>
-                <input type="search" placeholder="Buscar" id="buscaTramite" class="row">
-            </section>
-            <section id="tarjetasTramites">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4 g-3"
-                    id="tramiteContainer">
+            <section id="tarjetasTramites" class="base-section">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3  g-2" id="tramiteContainer">
                     <div class="col">
                         <!-- Transferencias de Vehículos -->
                         <div class="card h-100">
                             <img src="../img/llaves_auto.jpeg" class="img-fluid rounded-start" alt="llaves de auto">
                             <div class="card-body">
-                                <h5 class="card-title">Transferencias de Vehículos</h5>
+                                <h4 class="card-title">Transferencias de Vehículos</h4>
                                 <p class="card-text">
-                                <p>Requisitos</p>
+                                <h5 class="card-title">Requisitos</h5>
                                 <ul>
-                                    <li>Cédula de identidad vigente</li>
-                                    <li>Certificado de anotaciones vigentes</li>
-                                    <li>Certificado de multas</li>
-                                    <li>Permiso de circulación vigente</li>
-                                    <li>Acreditación de dominio del vehiculo</li>
+                                    <li>Cédula de identidad vigente.</li>
+                                    <li>Certificado de Anotaciones vigente (al día).</li>
+                                    <li>Certificado de Multas (al día).</li>
+                                    <li>Permiso de Circulación vigente.</li>
+                                    <li>Para que una persona distinta del dueño pueda vender un vehículo a nombre de
+                                        este, es necesario el poder otorgado por el dueño ante notario.</li>
+                                    <li>Si el vendedor o comprador, son personas jurídicas, deben además traer el Rut de
+                                        la Empresa y la Esctitura por la cual consta su personería para representarla,
+                                        con vigencia.</li>
                                 </ul>
+
                                 </p>
                             </div>
                             <a href="../pages/contacto.html" class="card-footer">Más información</a>
@@ -112,13 +119,16 @@
                         <div class="card h-100">
                             <img src="../img/llaves_casa.jpeg" class="img-fluid rounded-start" alt="llaves de casa">
                             <div class="card-body">
-                                <h5 class="card-title">Contrato de Arrendamiento</h5>
+                                <h4 class="card-title">Contrato de Arrendamiento</h4>
                                 <p class="card-text">
-                                <p>Requisitos</p>
+                                <h5 class="card-title">Requisitos</h5>
                                 <ul>
-                                    <li>Cédula de identidad vigente</li>
-                                    <li>Certificado de anotaciones vigentes</li>
-                                    <li>Acreditación de dominio del vehiculo</li>
+                                    <li>Comparecencia personal del arrendador con cédula de identidad vigente.</li>
+                                    <li>Comparecencia personal del arrendatario con cédula de identidad vigente.</li>
+                                    <li>Cédula de identidad vigente ambas parte y codeudor soli¡dario en caso de
+                                        concurrir</li>
+                                    <li>Certificado de Dominio Vigente (solicitar en Conservador de Bienes Raíces
+                                        respectivo).</li>
                                 </ul>
                                 </p>
                             </div>
@@ -130,15 +140,16 @@
                         <div class="card h-100">
                             <img src="../img/llaves_casa.jpeg" class="img-fluid rounded-start" alt="llaves de casa">
                             <div class="card-body">
-                                <h5 class="card-title">Compraventa Inmuebles</h5>
+                                <h4 class="card-title">Compraventa Inmuebles</h4>
                                 <p class="card-text">
-                                <p>Requisitos</p>
+                                <h5 class="card-title">Requisitos</h5>
                                 <ul>
-                                    <li>Cédula de identidad vigente</li>
-                                    <li>Certificado de anotaciones vigentes</li>
-                                    <li>Certificado de multas</li>
-                                    <li>Permiso de circulación vigente</li>
-                                    <li>Acreditación de dominio del vehiculo</li>
+                                    <li>Es un contrato que debe otorgarse mediante escritura pública. Necesariamente
+                                        requiere de la asesoría de un profesional abogado quien, a través de un estudio
+                                        de los títulos de dominio, determinará que el inmueble se encuentra en
+                                        condiciones de ser transferido pudiendo de esta forma el comprador adquirir el
+                                        dominio. El trámite de compraventa en el oficio notarial termina cuando la
+                                        propiedad es inscribe en el Conservador de Bienes Raíces.</li>
                                 </ul>
                                 </p>
                             </div>
@@ -150,13 +161,14 @@
                         <div class="card h-100">
                             <img src="../img/contrato.jpeg" class="img-fluid rounded-start" alt="imagen contrato">
                             <div class="card-body">
-                                <h5 class="card-title">Finiquito de Trabajo</h5>
+                                <h4 class="card-title">Finiquito de Trabajo</h4>
                                 <p class="card-text">
-                                <p>Requisitos</p>
+                                <h5 class="card-title">Requisitos</h5>
                                 <ul>
-                                    <li>Cédula de identidad vigente</li>
-                                    <li>Certificado de anotaciones vigentes</li>
-                                    <li>Certificado de multas</li>
+                                    <li>Comparecencia personal del trabajador con cédula de identidad vigente.</li>
+                                    <li>Acompañar tres (3) copias impresas del finiquito es requerida la firma del
+                                        empleador aunque sea en digital/escaneada).</li>
+                                    <li>Certificado de cotizaciones previsionales al día.</li>
                                     <li>Permiso de circulación vigente</li>
                                     <li>Acreditación de dominio del vehiculo</li>
                                 </ul>
@@ -170,12 +182,21 @@
                         <div class="card h-100">
                             <img src="../img/testamento.jpeg" class="img-fluid rounded-start" alt="imagen testamento">
                             <div class="card-body">
-                                <h5 class="card-title">Redacción de Testamento</h5>
+                                <h4 class="card-title">Redacción de Testamento</h4>
                                 <p class="card-text">
-                                <p>Requisitos</p>
+                                <h5 class="card-title">Requisitos</h5>
                                 <ul>
-                                    <li>Permiso de circulación vigente</li>
-                                    <li>Acreditación de dominio del vehiculo</li>
+                                    <li>"El testamento es un acto más o menos solemne, en que una persona dispone de
+                                        todo o parte de sus bienes para que tenga efecto después de sus días,
+                                        conservando la facultad de revocar las disposiciones contenidas en él mientras
+                                        viva", según es descrito en el Código Orgánico de Tribunales.</li>
+                                    <li>El testamento solemne abierto -que es el que más se utiliza debe constar por
+                                        escrito y otorgarse ante competente escribano y tres o 5 testigos.</li>
+                                    <li>El testamento solemne cerrado se otorga también ante Notario y tres testigos,
+                                        para lo cual el testador debe concurrir al acto con su testamento previamente
+                                        hecho, el que se guarda en un sobre lacrado y sellado que firman el testador,
+                                        los testigos y el Notario. Este es un documento del cual tiene conocimiento
+                                        solamente el testador.</li>
                                 </ul>
                                 </p>
                             </div>
@@ -189,12 +210,41 @@
                             <div class="card-body">
                                 <h5 class="card-title">Permiso para salir del pais</h5>
                                 <p class="card-text">
-                                <p>Requisitos</p>
+                                <h5 class="card-title">Menores que viajen acompañados por ambos padres:</h5>
                                 <ul>
-                                    <li>Cédula de identidad vigente</li>
-                                    <li>Certificado de anotaciones vigentes</li>
-                                    <li>Certificado de multas</li>
-
+                                    <li>Pasaporte o Cédula de identidad vigente según sea el país de destino. -
+                                        Certificado de Nacimiento o Libreta de Familia, más tres fotocopias simples del
+                                        documento. Menores que viajen acompañados por solo uno de sus padres:</li>
+                                    <li>Pasaporte o Cédula de Identidad vigente según sea el país de destino. -
+                                        Certificado de Nacimiento o Libreta de Familia, más tres fotocopias simples. -
+                                        Certificado de Defunción, en cado de estar fallecido uno de los padres, más tres
+                                        fotocopias simples. - Autorización Notarial del padre que no viaja, entregando
+                                        su consentimiento para la salida del menor o la autorización del Tribunal de
+                                        Familia que corresponda, en original mas tres fotocopias simples</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <a href="../pages/contacto.html" class="card-footer">Más información</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Permiso para salir del pais 2-->
+                        <div class="card h-100">
+                            <img src="../img/salida.jpeg" class="img-fluid rounded-start" alt="persona en aeropuerto">
+                            <div class="card-body">
+                                <h4 class="card-title">Permiso para salir del pais</h4>
+                                <p class="card-text">
+                                <h5 class="card-title">Menores No viajen acompañados de sus padres:</h5>
+                                <ul>
+                                    <li>Pasaporte o cédula de identidad vigente según sea el país de destino.</li>
+                                    <li>Certificado de Nacimiento o Libreta de Familia más tres fotocopias simples.</li>
+                                    <li>Certificado de Defunción en caso de estar fallecidos ambos padres, más tres
+                                        fotocopias simples.</li>
+                                    <li>Autorización Notarial de ambos padres, entregando su consertimiento para la
+                                        salida del menor, en original más tres fotocopias simples.</li>
+                                    <li>Autorización del Tribunal de Familia que corresponda, entregando el
+                                        consetimiento para el viaje del menor, en original más tres fotocopias simples.
+                                        Jefatura Nacional de Extranjería y Policía Internacional.</li>
                                 </ul>
                                 </p>
                             </div>
@@ -204,11 +254,14 @@
                 </div>
             </section>
 
+        </div>
     </main>
-    </div>
+
 
     <footer class="base-footer">
-        <Section class="container">
+        <section class="container">
+
+            <!-- Contenido Footer -->
             <div class="row">
                 <!-- Horario -->
                 <div class="horario footercards col-lg-4 col-md-6 col-sm-12">
@@ -281,12 +334,17 @@
                 </ul>
                 <!-- </nav> -->
             </div>
+
+            <!-- Firma -->
             <div class="row">
                 <div class="firma footercards col-12">
-                    <p>© Gagolabs 2023</p>
+                    <a target="_blank" href="https://www.linkedin.com/in/ruben-roldan/">
+                        <p>© Gagolabs 2023</p>
+                    </a>
                 </div>
             </div>
-        </Section>
+
+        </section>
 
     </footer>
 

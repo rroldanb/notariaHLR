@@ -102,9 +102,10 @@ $color-orange-400: #fb923c !default;
 
 $color-amarillo-primario: rgb(225,171,24);
 $color-amarillo-secundario: rgb(244,202,88);
+$color-amarillo-terciario:  rgb(255, 234, 0);
 $color-contraste-primario: #575249;
 $color-contraste-suave: #837e74e7;
-
+$color-fondo-suave: #ddddddbe;
 
 /** SHADOWS */
 $shadow-color: var(--#{$prefix}-shadow-color, 51 65 85) !default;

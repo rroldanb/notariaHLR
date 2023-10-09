@@ -1,26 +1,83 @@
 .card {
-    border: solid 1px #564b69;
+    border: solid 1px $color-contraste-suave;
     margin-top: 10px;
-    background-color: #ddddddea;
+    background-color: $color-fondo-suave;
+    opacity: .9;
+    min-width: 280px;
+
+    & img {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    &-text {
+        color: $color-slate-900;
+    }
+
+    &-title {
+        font-weight: bold;
+    }
+
+    &-footer {
+        background-color: $color-contraste-primario;
+        text-align: center;
+        color: $color-amarillo-primario;
+
+        &:hover {
+            color: $color-amarillo-secundario;
+            background-color: $color-contraste-suave;
+        }
+    }
 }
 
-.card img {
-    height: 200px;
-}
+.noticia-cards {
+    &-container {
+        background-color: $color-fondo-suave;
+        width: 70%;
+        margin-left: 15%;
+        padding: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-radius: 10px;
+    }
 
-.card-title {
-    font-weight: bold;
-}
+    &-item {
+        width: 95%;
+        background-color: $color-fondo-suave;
+        margin: 1em;
+        border-radius: 10px;
+        border: 1px solid $color-contraste-primario;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
 
-.card-footer {
-    background-color: #575249;
-    text-align: center;
-    color: rgb(244, 202, 88);
-}
+        & h3 {
+            padding-left: 1em;
+        }
 
-.card-footer:hover {
-    border: 1px solid #575249;
-    color: #575249;
-    background-color: rgb(244, 202, 88);
-}
+        & p {
+            padding-left: 2em;
+        }
 
+        & a {
+            /* Tamaño y ubicacion */
+            height: 2em;
+            padding: 5px 10px;
+            text-align: center;
+            /* Colores y forma*/
+            background-color: $color-contraste-primario;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            color: $color-amarillo-primario;
+
+            &:hover {
+                border: 1px solid $color-contraste-primario;
+                color: $color-amarillo-terciario;
+                background-color: $color-contraste-suave;
+                text-decoration: none;
+            }
+        }
+    }
+}

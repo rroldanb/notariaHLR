@@ -13,6 +13,11 @@
     gap: 16px;
     display: flex;
     align-items: center;
+    &-col {
+      flex-direction: column;
+      justify-content: center;
+      align-content: space-between;
+    }
     &-header {
       @extend .flex-container;
       justify-content: space-around;

@@ -7,7 +7,11 @@
 
  ## Documentacion de commits:
 
-### En este commit (08/10/2023)
+### Commit (09/10/2023)
+- Agrega descripcion realista páginas Trámites y Noticias.
+- Anida y parametriza con scss estilos de páginas Trámites y Enlaces.
+
+### Commit (08/10/2023)
 - Agrega favicon en todas las paginas.
 - Agrega descripcion realista página index.
 - Agrega accordions al index.
@@ -16,7 +20,7 @@
 - Anida y parametriza header y footers.
 - Replica header y footer a paginas hijas,
 
-### Este commit (06/10/2023)
+### Commit (06/10/2023)
 - Inicia documentación en el archivo README
 - Instala paquete sanitize para hacer reset de estilos
 - Comienza a trabajar con sass en el archivo /styles/scss/main.scss moviendo su procesamiento a /styles/css/style.css

@@ -13,19 +13,18 @@ body {
 body {
     position: relative;
     min-height: 100vh;
-
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 
-    color: #64748b;
+    color: $color-slate-500;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
     font-family: "Noto Sans", sans-serif;
-    background-color: #f1f5f9;
+    background-color: $color-slate-100;
 
     /**** Imagen de fondo para todo el sitio ***/
     background-image: url(../../img/moais.jpeg);
@@ -34,7 +33,7 @@ body {
 
 
 
-/** DEFAULT STYLES */
+// DEFAULT STYLES
 img {
     display: block;
     max-width: 100%;
@@ -42,13 +41,6 @@ img {
 
 a {
     text-decoration: none;
-    color: rgb(244, 202, 88);
+    color: $color-amarillo-primario;
 }
 
-.tituloPagina {
-    /* Para indicar la página que estoy mostrando*/
-    text-align: center;
-    font-size: 3em;
-    font-weight: bold;
-    color: black;
-}
