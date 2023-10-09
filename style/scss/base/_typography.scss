@@ -1,8 +1,8 @@
 h1, h2, h3, h4, h5, h6 {
-    color: rgb(244, 202, 88);
+    color: $color-amarillo-primario;
     font-weight: 500;
     line-height: 1.25;
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: $font-serif;
 
     &:first-child {
         margin-top: 0;
@@ -44,9 +44,10 @@ h6 {
 }
 
 p {
-    color: #f8f8f8;
+    color: white;
     margin: 16px 0;
     font-weight: 1.5;
+    font-family: $font-sans;
 
     &:first-child {
         margin-top: 0;

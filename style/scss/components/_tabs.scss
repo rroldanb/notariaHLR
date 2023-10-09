@@ -1,109 +1,99 @@
-
 // Estilos para el contenedor de pestañas 
-.tabsContainer {
-    margin-top: 15%;
-    margin-left: 15%;
-    width: 75%;
-    max-width: 1800px;
-    height: 75%;
+.tabs {
+    &-container {
+        margin-top: 15%;
+        margin-left: 15%;
+        width: 75%;
+        max-width: 1800px;
+        height: 75%;
+    }
+    &-link {
+        background-color: $color-contraste-primario;
+        margin-right: 1px;
+        cursor: pointer;
+        padding: 5px 10px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 500;
+        color: $color-amarillo-primario;
+        border-radius: 5px;
+        &.active {
+            background-color: $color-amarillo-secundario;
+            color: $color-contraste-primario;
+        }
+        &:hover {
+            background-color: $color-contraste-suave;
+            color: $color-amarillo-secundario;
+        }
+    }
 }
 
-// Estilo Pestañas
 
-.nav-link {
-    // color y forma
-    background-color: #575249e7;
-    margin-right: 2px;
-    cursor: pointer;
-    padding: 5px 10px;
-
-    // texto 
-    text-decoration: none;
-    text-align: center;
-    font-weight: 500;
-    color: rgb(225, 171, 24);
+.nav-pills {
+    color: $color-contraste-primario;
 }
 
 
-.nav-link:hover {
-    background-color: #837e74e7;
-    color: rgb(244, 202, 88);
-}
-
-.nav-pills .nav-link.active {
-    background-color: rgb(244, 202, 88);
-    color: #575249;
-}
-
-/****** Estilos para el contenido de las tabs ******/
-
-
-.tabContent {
+.tab-content {
     position: relative;
     margin: 0 auto;
 }
 
-/**** Estilo para la imagen de las tabs ****/
 .tabImg {
     width: 100%;
 }
 
 
-/**** Estilo para el texto de las tabs****/
-
-.tabContent .tabText {
-    /* position: absolute; */
+.tab-content .tabText {
     max-height: 20%;
     bottom: 0;
-    background: rgb(0, 0, 0);
+    background: $color-contraste-suave;
     /* Fallback color */
-    background: rgba(0, 0, 0, 0.9);
-    /* Black background with 0.5 opacity */
-
-    color: #f1f1f1;
+    background: $color-contraste-primario;
+    opacity: .9;
+    color: white;
     width: 100%;
     padding: 1em;
+
+    & h2 {
+        margin: 0px;
+        font-weight: bold;
+    }
+
+    & p {
+        margin: 0px;
+        text-align: justify;
+    }
 }
 
-.tabContent h2 {
-    margin: 0px;
-    font-weight: bold;
+
+.accordions-container {
+    display: none;
+    flex-direction: column;
+    margin-left: 0%;
+    width: 100%;
 }
 
-.tabContent p {
-    margin: 0px;
-    text-align: justify;
-}
-
-
-.fichasSinTabs {
-    display: none
-}
 
 @media only screen and (max-width: 768px) {
-    .fichasSinTabs {
+    .accordions-container {
         display: flex;
-        flex-direction: column;
-        margin-left: 0%;
-        width: 100%;
         padding-top: 15%;
     }
 
-    .tabsContainer {
+    .tabs-container {
         display: none;
     }
 }
-    @media only screen and (max-width: 500px) {
-        .fichasSinTabs {
-            display: flex;
-            flex-direction: column;
-            margin-left: 0%;
-            width: 100%;
-            padding-top: 40%;
-        }
-    
-        .tabsContainer {
-            display: none;
-        }
+
+@media only screen and (max-width: 500px) {
+    .accordions-container {
+        display: flex;
+        padding-top: 40%;
+    }
+
+    .tabs-container {
+        display: none;
+    }
 
 }

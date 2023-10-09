@@ -1,4 +1,7 @@
-
+// VARIABLES
+@import './abstracts/variables';
+// MIXINS
+@import './abstracts/mixins';
 //BASE
 @import './base/base';
 @import './base/typography';
@@ -10,6 +13,10 @@
 //COMPONENTS
 @import './components/tabs';
 @import './components/cards';
+@import './components/accodions';
+@import './components/navbar';
+@import './components/burger-menu';
+
 //PAGES
 @import './pages/home';
 @import './pages/tramites';

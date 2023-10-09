@@ -1,30 +1,23 @@
-.contenedorFooter {
-    /* Fondo footer*/
-    background-image: linear-gradient(rgba(120, 80, 51, 0.7), rgba(120, 80, 51, 0.7)), url(../img/wooden-texture.svg);
-    background-repeat: repeat;
-    background-size: cover;
-}
 
 .footercards {
     color: rgb(236, 183, 36);
+    & ul {
+        list-style: none;
+    }
 }
 
-.footercards ul {
-    list-style: none;
-}
-
-.datosContacto img {
-    width: 25px;
-}
-
-.datosContacto h4 {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.datosContacto a {
-    text-decoration: none;
-    color: rgb(236, 183, 36);
+.datosContacto {
+    & img {
+        width: 25px;
+    }
+    & h4 {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    & a {
+        text-decoration: none;
+        color: rgb(236, 183, 36);
+    }
 }
 
 .contact_Icons {
@@ -35,38 +28,36 @@
     text-align: center;
     padding-bottom: 1em;
     padding-top: 1em;
-}
-
-.mapa iframe {
-    border-radius: 10px;
-    width: 200px;
-    height: 110px;
-    filter: sepia(70%)
+    & iframe {
+        border-radius: 10px;
+        width: 200px;
+        height: 110px;
+        filter: sepia(70%)
+    }
 }
 
 .horario {
     padding-bottom: 1em;
+    & h4 {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    & p {
+        padding: 0px;
+        margin: 0px;
+    }
 }
 
-.horario h4 {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.horario p {
-    padding: 0px;
-    margin: 0px;
-}
 
 .firma {
     font-size: x-small;
     margin-bottom: 0px;
     text-align: center;
+    & p {
+        margin-top: 0rem;
+    }
 }
 
-.firma p {
-    margin-top: 0rem;
-}
 
 .row {
     margin-right: 0;
@@ -86,31 +77,3 @@
     }
 }
 
-.footerNavMenu {
-    list-style: none;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.footerNavItem {
-    margin-bottom: 10px;
-}
-
-.footerNavLink {
-    background-color: #575249;
-    padding: 5px 10px;
-    border: 1px solid rgb(236, 183, 36);
-    border-radius: 10px;
-    text-decoration: none;
-    color: rgb(244, 202, 88);
-    font-size: large;
-
-}
-
-.footerNavLink:hover {
-    background-color: rgb(244, 202, 88);
-    color: #575249;
-    border: 1px solid #575249;
-}

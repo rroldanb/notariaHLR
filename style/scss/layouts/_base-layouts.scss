@@ -4,19 +4,22 @@
         flex-direction: column;
     }
 
-    &-header {
-        top: 0;
+    &-frame {
         left: 0;
         right: 0;
         z-index: 9000;
         position: fixed;
         box-shadow: 0 0 1em -0.125em rgb(10 10 10 / 10%),
-            0 0 0 1px rgb(10 10 10 / 2%);
-
-        border-bottom: 1px solid rgb(87, 58, 38);
+        0 0 0 1px rgb(10 10 10 / 2%);
         background-image: linear-gradient(rgba(129, 87, 56, 0.7), rgba(129, 87, 56, 0.7)), url(../../img/wooden-texture.svg);
         background-repeat: repeat;
         background-size: cover;
+        border-bottom: 1px solid $color-contraste-primario;
+    }
+
+    &-header {
+        @extend .base-frame;
+        top: 0;
     }
 
     &-content {
@@ -26,31 +29,20 @@
     }
 
     &-footer {
-        // padding: 32px 16px;
+        @extend .base-frame;
         font-size: 16px;
         font-weight: 500;
         text-align: center;
         bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 9000;
-        position: fixed;
 
-        box-shadow: 0 0 1em -0.125em rgb(10 10 10 / 10%),
-            0 0 0 1px rgb(10 10 10 / 2%);
-
-        border-bottom: 1px solid rgb(87, 58, 38);
-        background-image: linear-gradient(rgba(129, 87, 56, 0.7), rgba(129, 87, 56, 0.7)), url(../../img/wooden-texture.svg);
-        background-repeat: repeat;
-        background-size: cover;
 
         p {
-            color: rgb(244, 202, 88);
+            color: $color-amarillo-secundario;
             padding: 0;
             margin: 0;
         }
         h4 {
-            padding: 0;
+            padding: 14px;
             padding-bottom: 4px;
             margin: 0;
         }

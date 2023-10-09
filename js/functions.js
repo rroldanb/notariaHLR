@@ -1,7 +1,9 @@
+// TABS
+
 function showTab(tabName) {
     var i, tabContent;
 
-    tabContent = document.getElementsByClassName("tabContent");
+    tabContent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabContent.length; i++) {
         tabContent[i].style.display = "none";
     }
@@ -9,9 +11,10 @@ function showTab(tabName) {
     document.getElementById(tabName).style.display  = "block";
 }
 
+//MENU HAMBURGUESA
 
 const hamburgersa = document.querySelector(".hamburgersa");
-const headerNavMenu = document.querySelector(".headerNavMenu");
+const headerNavMenu = document.querySelector(".navbar-menu");
 
 hamburgersa.addEventListener("click", mobileMenu);
 
@@ -20,8 +23,7 @@ function mobileMenu() {
     headerNavMenu.classList.toggle("active");
 }
 
-const headerNavLink = document.querySelectorAll(".headerNavLink");
-const fichasSinTabs = document.querySelector(".fichasSinTabs");
+const headerNavLink = document.querySelectorAll(".navbar-link");
 
 headerNavLink.forEach(n => n.addEventListener("click", closeMenu));
 

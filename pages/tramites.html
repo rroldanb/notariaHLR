@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../style/css/style.css">
 
     <!-- Nombre de la pagina-->
+    <link rel="shortcut icon" href="../img/moai-crema.jpg" type="image/x-icon">
     <title>Notaria Juan Pérez González Trámites Recurrentes</title>
 
 </head>
@@ -27,184 +28,187 @@
 
 
     <!-- Header-->
-    <header>
+    <header class="base-header">
         <!-- Pre-encabezado-->
-        <div class="numeroNotaria">
+        <div class="pre-header">
             <h4>Cuarta Notaría de Rapa Nui</h4>
         </div>
         <!-- Encabezado -->
-        <section class="headerContainer">
+        <section class="flex-container-header wrap">
             <!--Membrete-->
-            <div class="membrete">
-                <div class="logoMembrete">
+            <div class="logo-container">
+
+                <div class="logo-img">
                     <a href="../index.html"><img src="../img/moai.png" alt="Logo Notaria Juan Pérez"></a>
                 </div>
-                <div class="textoMembrete">
+                <div class="logo-text">
                     <a href="../index.html">
-                        <h1>Juan Pérez González</h1>
+                        <h2 class="logo-text-title">Juan Pérez González</h2>
                     </a>
                     <a href="../index.html">
-                        <h4>Notario Público de Rapa Nui</h4>
+                        <h4 class="logo-text-subtitle">Notario Público de Rapa Nui</h4>
                     </a>
                 </div>
             </div>
             <!-- Navbar -->
             <nav class="headerNav">
-                <ul class="headerNavMenu">
-                    <li class="headerNavItem">
-                        <a href="../index.html" class="headerNavLink">Inicio</a>
+                <ul class="navbar-menu">
+                    <li class="navbar-item">
+                        <a href="../index.html" class="navbar-link">Inicio</a>
                     </li>
-                    <li class="headerNavItem">
-                        <a href="#" class="headerNavLink"> Trámites </a>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link"> Trámites </a>
                     </li>
-                    <li class="headerNavItem">
-                        <a href="../pages/indiceDocumentos.html" class="headerNavLink">Consulta Índice</a>
+                    <li class="navbar-item">
+                        <a href="../pages/indice-documentos.html" class="navbar-link">Consulta Índice</a>
                     </li>
-                    <li class="headerNavItem">
-                        <a href="../pages/enlaces.html" class="headerNavLink">Enlaces</a>
+                    <li class="navbar-item">
+                        <a href="../pages/enlaces.html" class="navbar-link">Enlaces</a>
                     </li>
-                    <li class="headerNavItem">
-                        <a href="../pages/contacto.html" class="headerNavLink"> Contacto </a>
+                    <li class="navbar-item">
+                        <a href="../pages/contacto.html" class="navbar-link"> Contacto </a>
                     </li>
                 </ul>
                 <div class="hamburgersa" id="lineas3">&#9776;</div>
             </nav>
         </section>
     </header>
+
     <main>
 
 
-<div class="tramitesContainerGral">
+        <div class="tramitesContainerGral">
 
-        <section id="encabezadoTramites" >
-            <h2 class="tituloPagina">Guía de Trámites Recurrentes</h2>
-            <input type="search" placeholder="Buscar" id="buscaTramite" class="row">
-        </section>
-        <section id="tarjetasTramites">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4 g-3"
-                id="tramiteContainer">
-                <div class="col">
-                    <!-- Transferencias de Vehículos -->
-                    <div class="card h-100">
-                        <img src="../img/llaves_auto.jpeg" class="img-fluid rounded-start" alt="llaves de auto">
-                        <div class="card-body">
-                            <h5 class="card-title">Transferencias de Vehículos</h5>
-                            <p class="card-text">
-                            <p>Requisitos</p>
-                            <ul>
-                                <li>Cédula de identidad vigente</li>
-                                <li>Certificado de anotaciones vigentes</li>
-                                <li>Certificado de multas</li>
-                                <li>Permiso de circulación vigente</li>
-                                <li>Acreditación de dominio del vehiculo</li>
-                            </ul>
-                            </p>
+            <section id="encabezadoTramites">
+                <h2 class="tituloPagina">Guía de Trámites Recurrentes</h2>
+                <input type="search" placeholder="Buscar" id="buscaTramite" class="row">
+            </section>
+            <section id="tarjetasTramites">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4 g-3"
+                    id="tramiteContainer">
+                    <div class="col">
+                        <!-- Transferencias de Vehículos -->
+                        <div class="card h-100">
+                            <img src="../img/llaves_auto.jpeg" class="img-fluid rounded-start" alt="llaves de auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Transferencias de Vehículos</h5>
+                                <p class="card-text">
+                                <p>Requisitos</p>
+                                <ul>
+                                    <li>Cédula de identidad vigente</li>
+                                    <li>Certificado de anotaciones vigentes</li>
+                                    <li>Certificado de multas</li>
+                                    <li>Permiso de circulación vigente</li>
+                                    <li>Acreditación de dominio del vehiculo</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <a href="../pages/contacto.html" class="card-footer">Más información</a>
                         </div>
-                        <a href="../pages/contacto.html" class="card-footer">Más información</a>
                     </div>
-                </div>
 
-                <div class="col">
-                    <!-- Contrato de arrendamiento -->
-                    <div class="card h-100">
-                        <img src="../img/llaves_casa.jpeg" class="img-fluid rounded-start" alt="llaves de casa">
-                        <div class="card-body">
-                            <h5 class="card-title">Contrato de Arrendamiento</h5>
-                            <p class="card-text">
-                            <p>Requisitos</p>
-                            <ul>
-                                <li>Cédula de identidad vigente</li>
-                                <li>Certificado de anotaciones vigentes</li>
-                                <li>Acreditación de dominio del vehiculo</li>
-                            </ul>
-                            </p>
+                    <div class="col">
+                        <!-- Contrato de arrendamiento -->
+                        <div class="card h-100">
+                            <img src="../img/llaves_casa.jpeg" class="img-fluid rounded-start" alt="llaves de casa">
+                            <div class="card-body">
+                                <h5 class="card-title">Contrato de Arrendamiento</h5>
+                                <p class="card-text">
+                                <p>Requisitos</p>
+                                <ul>
+                                    <li>Cédula de identidad vigente</li>
+                                    <li>Certificado de anotaciones vigentes</li>
+                                    <li>Acreditación de dominio del vehiculo</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <a href="../pages/contacto.html" class="card-footer">Más información</a>
                         </div>
-                        <a href="../pages/contacto.html" class="card-footer">Más información</a>
                     </div>
-                </div>
-                <div class="col">
-                    <!-- Compraventa Inmuebles -->
-                    <div class="card h-100">
-                        <img src="../img/llaves_casa.jpeg" class="img-fluid rounded-start" alt="llaves de casa">
-                        <div class="card-body">
-                            <h5 class="card-title">Compraventa Inmuebles</h5>
-                            <p class="card-text">
-                            <p>Requisitos</p>
-                            <ul>
-                                <li>Cédula de identidad vigente</li>
-                                <li>Certificado de anotaciones vigentes</li>
-                                <li>Certificado de multas</li>
-                                <li>Permiso de circulación vigente</li>
-                                <li>Acreditación de dominio del vehiculo</li>
-                            </ul>
-                            </p>
+                    <div class="col">
+                        <!-- Compraventa Inmuebles -->
+                        <div class="card h-100">
+                            <img src="../img/llaves_casa.jpeg" class="img-fluid rounded-start" alt="llaves de casa">
+                            <div class="card-body">
+                                <h5 class="card-title">Compraventa Inmuebles</h5>
+                                <p class="card-text">
+                                <p>Requisitos</p>
+                                <ul>
+                                    <li>Cédula de identidad vigente</li>
+                                    <li>Certificado de anotaciones vigentes</li>
+                                    <li>Certificado de multas</li>
+                                    <li>Permiso de circulación vigente</li>
+                                    <li>Acreditación de dominio del vehiculo</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <a href="../pages/contacto.html" class="card-footer">Más información</a>
                         </div>
-                        <a href="../pages/contacto.html" class="card-footer">Más información</a>
                     </div>
-                </div>
-                <div class="col">
-                    <!-- Finiquito de Trabajo -->
-                    <div class="card h-100">
-                        <img src="../img/contrato.jpeg" class="img-fluid rounded-start" alt="imagen contrato">
-                        <div class="card-body">
-                            <h5 class="card-title">Finiquito de Trabajo</h5>
-                            <p class="card-text">
-                            <p>Requisitos</p>
-                            <ul>
-                                <li>Cédula de identidad vigente</li>
-                                <li>Certificado de anotaciones vigentes</li>
-                                <li>Certificado de multas</li>
-                                <li>Permiso de circulación vigente</li>
-                                <li>Acreditación de dominio del vehiculo</li>
-                            </ul>
-                            </p>
+                    <div class="col">
+                        <!-- Finiquito de Trabajo -->
+                        <div class="card h-100">
+                            <img src="../img/contrato.jpeg" class="img-fluid rounded-start" alt="imagen contrato">
+                            <div class="card-body">
+                                <h5 class="card-title">Finiquito de Trabajo</h5>
+                                <p class="card-text">
+                                <p>Requisitos</p>
+                                <ul>
+                                    <li>Cédula de identidad vigente</li>
+                                    <li>Certificado de anotaciones vigentes</li>
+                                    <li>Certificado de multas</li>
+                                    <li>Permiso de circulación vigente</li>
+                                    <li>Acreditación de dominio del vehiculo</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <a href="../pages/contacto.html" class="card-footer">Más información</a>
                         </div>
-                        <a href="../pages/contacto.html" class="card-footer">Más información</a>
                     </div>
-                </div>
-                <div class="col">
-                    <!-- Redacción de Testamento -->
-                    <div class="card h-100">
-                        <img src="../img/testamento.jpeg" class="img-fluid rounded-start" alt="imagen testamento">
-                        <div class="card-body">
-                            <h5 class="card-title">Redacción de Testamento</h5>
-                            <p class="card-text">
-                            <p>Requisitos</p>
-                            <ul>
-                                <li>Permiso de circulación vigente</li>
-                                <li>Acreditación de dominio del vehiculo</li>
-                            </ul>
-                            </p>
+                    <div class="col">
+                        <!-- Redacción de Testamento -->
+                        <div class="card h-100">
+                            <img src="../img/testamento.jpeg" class="img-fluid rounded-start" alt="imagen testamento">
+                            <div class="card-body">
+                                <h5 class="card-title">Redacción de Testamento</h5>
+                                <p class="card-text">
+                                <p>Requisitos</p>
+                                <ul>
+                                    <li>Permiso de circulación vigente</li>
+                                    <li>Acreditación de dominio del vehiculo</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <a href="../pages/contacto.html" class="card-footer">Más información</a>
                         </div>
-                        <a href="../pages/contacto.html" class="card-footer">Más información</a>
                     </div>
-                </div>
-                <div class="col">
-                    <!-- Permiso para salir del pais -->
-                    <div class="card h-100">
-                        <img src="../img/salida.jpeg" class="img-fluid rounded-start" alt="persona en aeropuerto">
-                        <div class="card-body">
-                            <h5 class="card-title">Permiso para salir del pais</h5>
-                            <p class="card-text">
-                            <p>Requisitos</p>
-                            <ul>
-                                <li>Cédula de identidad vigente</li>
-                                <li>Certificado de anotaciones vigentes</li>
-                                <li>Certificado de multas</li>
+                    <div class="col">
+                        <!-- Permiso para salir del pais -->
+                        <div class="card h-100">
+                            <img src="../img/salida.jpeg" class="img-fluid rounded-start" alt="persona en aeropuerto">
+                            <div class="card-body">
+                                <h5 class="card-title">Permiso para salir del pais</h5>
+                                <p class="card-text">
+                                <p>Requisitos</p>
+                                <ul>
+                                    <li>Cédula de identidad vigente</li>
+                                    <li>Certificado de anotaciones vigentes</li>
+                                    <li>Certificado de multas</li>
 
-                            </ul>
-                            </p>
+                                </ul>
+                                </p>
+                            </div>
+                            <a href="../pages/contacto.html" class="card-footer">Más información</a>
                         </div>
-                        <a href="../pages/contacto.html" class="card-footer">Más información</a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
     </main>
-</div>
-    <footer>
-        <section class="contenedorFooter .container-fluid text-center">
+    </div>
+
+    <footer class="base-footer">
+        <Section class="container">
             <div class="row">
                 <!-- Horario -->
                 <div class="horario footercards col-lg-4 col-md-6 col-sm-12">
@@ -238,7 +242,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"
                             class="contact_Icons">
                             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com 
-                                License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                             <path
                                 d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                         </svg>
@@ -258,21 +262,21 @@
             <!--Footer Navbar -->
             <div class="row">
                 <!-- <nav id="footerNav"> -->
-                <ul class="footerNavMenu" id="footerNav">
-                    <li class="footerNavItem">
-                        <a href="../index.html" class="footerNavLink">Home</a>
+                <ul class="navbar-menu-footer" id="footerNav">
+                    <li class="navbar-item-footer">
+                        <a href="../index.html" class="navbar-link-footer">Inicio</a>
                     </li>
-                    <li class="footerNavItem">
-                        <a href="#" class="footerNavLink"> Trámites </a>
+                    <li class="navbar-item-footer">
+                        <a href="#" class="navbar-link-footer"> Trámites </a>
                     </li>
-                    <li class="footerNavItem">
-                        <a href="../pages/indice-escrituras.html" class="footerNavLink">Consulta Índice</a>
+                    <li class="navbar-item-footer">
+                        <a href="../pages/indice-documentos.html" class="navbar-link-footer">Consulta Índice</a>
                     </li>
-                    <li class="footerNavItem">
-                        <a href="../pages/enlaces.html" class="footerNavLink">Enlaces</a>
+                    <li class="navbar-item-footer">
+                        <a href="../pages/enlaces.html" class="navbar-link-footer">Enlaces</a>
                     </li>
-                    <li class="footerNavItem">
-                        <a href="../pages/contacto.html" class="footerNavLink"> Contacto </a>
+                    <li class="navbar-item-footer">
+                        <a href="../pages/contacto.html" class="navbar-link-footer"> Contacto </a>
                     </li>
                 </ul>
                 <!-- </nav> -->
@@ -282,10 +286,9 @@
                     <p>© Gagolabs 2023</p>
                 </div>
             </div>
-        </section>
+        </Section>
 
     </footer>
-    <!-- </section> -->
 
     <!-- Mi script-->
     <script src="../js/functions.js"></script>
