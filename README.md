@@ -2,9 +2,9 @@
 #### Curso CoderHouse Desarrollo Web comision dw-58465
 ## Aplicando SCSS a la entrega 2
 
-- Repositorio público de esta entrega en [Github] [RRGithubRep]
-- Deploy de esta entrega en [Github] [RRGithub] y en [Netlify] [RRNetlify]
-- Referencia Entrega 2 en [Github] [RREntrega2] 
+- Repositorio público de esta entrega en [Repositorio Github]
+- Deploy de esta [entrega en Github] y en [Netlify] 
+- Referencia [entrega 2 en Github]
 
 
  ## Documentacion de commits:
@@ -39,7 +39,7 @@
 - Genera partial de componentes cards y tabs.
 - Inicia pruebas de accordions para pagina de inicio.
 
-[RRGithubRep]: https://github.com/rroldanb/dw-58465-entrega3.git
-[RRGithub]: https://rroldanb.github.io/dw-58465-entrega3/ 
-[RRNetlify]: https://notariajuanperez.netlify.app/
-[RREntrega2]: https://github.com/rroldanb/entrega2.git
+[Repositorio Github]: https://github.com/rroldanb/dw-58465-entrega3.git
+[entrega en Github]: https://rroldanb.github.io/dw-58465-entrega3/ 
+[Netlify]: https://notariajuanperez.netlify.app/
+[entrega 2 en Github]: https://github.com/rroldanb/entrega2.git

@@ -12,7 +12,7 @@
 
 .indiceFiltros {
     display: flex;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: $font-sans;
     margin-top: 1em;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -59,7 +59,7 @@
     // margin-left: 5%;
     margin-top: 1em;
     // width: 80%;
-    border: 1px solid #575249;
+    border: 1px solid $color-contraste-primario;
     background-color: rgba(255, 255, 255, 0.9);
     max-width: 70em;
     overflow-x: scroll;
@@ -92,7 +92,7 @@
     & th {
         background-color: #000;
         color: white;
-        background-color: #575249;
+        background-color: $color-contraste-primario;
         color: rgb(244, 202, 88);
         border: 1px solid #ccc;
         text-align: left;
@@ -101,8 +101,6 @@
     & tr:nth-child(even) {
         background-color: rgba(220, 220, 220, 0.9);
     }
-    & tr:nth-child(even) {
-        background-color: rgba(220, 220, 220, 0.9);
-    }
+
 }
 
