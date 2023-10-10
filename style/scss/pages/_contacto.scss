@@ -1,25 +1,18 @@
-/******* Formulario de Contacto****/
-
-
-
 .formularioContacto {
-    /* Colores y forma*/
-    background-color: #ddddddbe;
+    background-color: $color-fondo-suave;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     border-radius: 10px;
-    /* Tamaño y ubicacion */
-    width: 80%;
-    margin-left: 10%;
     padding: 1.5em;
     max-width: 1400px;
+    margin-top: 10em;
 }
 
 .contactFormCont {
-    margin-top: 0px;
+
+
     background-color: #5752498d;
     color: whitesmoke;
     border-radius: 10px;
-    /* Grilla*/
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: auto;
@@ -36,15 +29,30 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     margin-top: 0.5em;
+
+    & h3 {
+        color: white;
+    }
 }
 
 .timbreContacto {
     grid-area: timbreContacto;
     border-bottom-left-radius: 10px;
-    color: rgb(244, 202, 88);
+    color: $color-amarillo-primario;
     text-align: center;
     margin: 1em;
-    box-shadow: #5752498d 3px 3px 6px 0px inset, #c2b8a68d -3px -3px 6px 1px inset;
+    box-shadow: $color-contraste-primario 3px 3px 6px 0px inset, $color-contraste-suave -3px -3px 6px 1px inset;
+
+    & img {
+        width: 15em;
+        max-width: 40%;
+    }
+
+    & h3,
+    h5 {
+        margin: 0;
+        font-weight: bold;
+    }
 }
 
 #horarioContacto {
@@ -54,78 +62,28 @@
     text-align: center;
 }
 
-.timbreContacto img {
-    width: 15em;
-    max-width: 40%;
-}
 
 .datosContactoForm {
     grid-area: datosContactoForm;
-    box-shadow: #5752498d 3px 3px 6px 0px inset, #c2b8a68d -3px -3px 6px 1px inset;
     text-align: center;
-    padding: 1em;
+    padding: 0em;
+    margin: 0;
 
+    & h4 {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    & p {
+        margin: 0;
+        padding: 0;
+    }
+
+    & a {
+        color: whitesmoke;
+    }
 }
 
-.datosContactoForm a {
-    color: whitesmoke;
-}
-
-.contactoInputsCont {
-    grid-area: contactoInputsCont;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    align-items: start;
-
-}
-
-.contactoInputs {
-    /* display: block; */
-    margin-left: 1%;
-}
-
-.formComp {
-    width: 95%;
-    /* height: 2em; */
-    font-family: 'Noto Sans', sans-serif;
-}
-
-
-.contactoInputsCont input::placeholder {
-    color: grey;
-}
-
-.contactoInputsCont select {
-    color: gray;
-}
-
-.contactoInputsCont textarea::placeholder {
-    color: gray;
-    font-family: 'Noto Sans', sans-serif;
-    padding-left: 5px;
-}
-
-
-.botonesContacto {
-    /* Tamaño y ubicacion */
-    width: 95%;
-    height: 2.5em;
-    margin-top: 10px;
-    padding: 5px 10px;
-    margin-bottom: 0.5em;
-
-    /* Colores y forma*/
-    font-size: large;
-    background-color: #575249;
-    border-radius: 10px;
-    color: rgb(244, 202, 88);
-}
-
-.botonesContacto:hover {
-    border: 1px solid #575249;
-    color: #575249;
-    background-color: rgb(244, 202, 88);
-}
 
 
 
@@ -152,12 +110,11 @@
         width: 100%;
     }
 
-    #horarioContacto{
+    #horarioContacto {
         display: none;
     }
-    .datosContactoForm{
+
+    .datosContactoForm {
         display: none;
     }
 }
-
-/****** Fin Pagina Contacto**********/

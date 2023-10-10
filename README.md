@@ -2,14 +2,18 @@
 #### Curso CoderHouse Desarrollo Web comision dw-58465
 ## Aplicando SCSS a la entrega 2
 
-- Deploy de esta entrega: https://notariajuanperez.netlify.app/
-- Referencia Entrega 2: https://github.com/rroldanb/entrega2.git 
+- Repositorio público de esta entrega en [Github] [RRGithubRep]
+- Deploy de esta entrega en [Github] [RRGithub] y en [Netlify] [RRNetlify]
+- Referencia Entrega 2 en [Github] [RREntrega2] 
+
 
  ## Documentacion de commits:
 
 ### Commit (09/10/2023)
 - Agrega descripcion realista páginas Trámites y Noticias.
 - Anida y parametriza con scss estilos de páginas Trámites y Enlaces.
+- Anida y parametriza con scss estilos de páginas Indice-documentos y Contacto.
+- Agrega metadata en página Index.
 
 ### Commit (08/10/2023)
 - Agrega favicon en todas las paginas.
@@ -34,3 +38,8 @@
 - Genera ultils con descripciones para containers.
 - Genera partial de componentes cards y tabs.
 - Inicia pruebas de accordions para pagina de inicio.
+
+[RRGithubRep]: https://github.com/rroldanb/dw-58465-entrega3.git
+[RRGithub]: https://rroldanb.github.io/dw-58465-entrega3/ 
+[RRNetlify]: https://notariajuanperez.netlify.app/
+[RREntrega2]: https://github.com/rroldanb/entrega2.git

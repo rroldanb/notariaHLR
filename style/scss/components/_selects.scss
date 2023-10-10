@@ -1,0 +1,30 @@
+.contactoInputsCont {
+    grid-area: contactoInputsCont;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: start;
+
+    & input::placeholder {
+        color: grey;
+    }
+
+    & textarea::placeholder {
+        color: gray;
+        font-family: 'Noto Sans', sans-serif;
+        padding-left: 5px;
+    }
+
+    & select {
+        color: gray;
+    }
+}
+
+.contactoInputs {
+    margin-left: 1%;
+}
+
+.formComp {
+    width: 95%;
+    font-family: $font-sans;
+}
+
