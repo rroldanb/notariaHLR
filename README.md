@@ -9,7 +9,7 @@
 
  ## Documentacion de commits:
 
-### Commit (09/10/2023)
+### Commit (15/10/2023)
 - Arregla menu hamburguesa que se sobreponía.
 - Revisa y mejora estilos responsive en todas las paginas.
 - Despliega mas elementos en menu carrusel de la pagina enlaces.
