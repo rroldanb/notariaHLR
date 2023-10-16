@@ -1,6 +1,6 @@
 
 .footercards {
-    color: rgb(236, 183, 36);
+    color: $color-amarillo-secundario;
     & ul {
         list-style: none;
     }
@@ -16,12 +16,12 @@
     }
     & a {
         text-decoration: none;
-        color: rgb(236, 183, 36);
+        color: $color-amarillo-secundario;
     }
 }
 
 .contact_Icons {
-    fill: rgb(163, 163, 66)
+    fill: rgb(163, 163, 66);
 }
 
 .mapa {

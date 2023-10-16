@@ -10,6 +10,13 @@
  ## Documentacion de commits:
 
 ### Commit (09/10/2023)
+- Arregla menu hamburguesa que se sobreponía.
+- Revisa y mejora estilos responsive en todas las paginas.
+- Despliega mas elementos en menu carrusel de la pagina enlaces.
+- Actualiza icono SII pagina enlaces.
+- Agrega efecto blur y opacity a imagen de fondo global.
+
+### Commit (09/10/2023)
 - Agrega descripcion realista páginas Trámites y Noticias.
 - Anida y parametriza con scss estilos de páginas Trámites y Enlaces.
 - Anida y parametriza con scss estilos de páginas Indice-documentos y Contacto.
@@ -38,6 +45,26 @@
 - Genera ultils con descripciones para containers.
 - Genera partial de componentes cards y tabs.
 - Inicia pruebas de accordions para pagina de inicio.
+
+## Variables `CSS` personalizadas:
+
+```scss
+:root {
+$chevron: var(--#{$prefix}-chevron, url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 20 14' fill='none' stroke='rgb(244, 202, 88)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>")) !default;
+
+
+$font-sans: Inter var, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !default;
+
+$color-amarillo-primario: rgb(225,171,24);
+$color-amarillo-secundario: rgb(244,202,88);
+$color-amarillo-terciario:  rgb(255, 234, 0);
+$color-contraste-primario: #575249;
+$color-contraste-suave: #837e74e7;
+$color-fondo-primario:#5752498d;
+$color-fondo-suave: #ddddddbe;
+}
+```
 
 [Repositorio Github]: https://github.com/rroldanb/dw-58465-entrega3.git
 [entrega en Github]: https://rroldanb.github.io/dw-58465-entrega3/ 

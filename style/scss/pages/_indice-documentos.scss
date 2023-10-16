@@ -1,9 +1,10 @@
-
 .indiceDoc {
     border: #000 solid 1px;
     background-color: #5752498d;
     margin-top: 10em;
+    padding-bottom: 3em;
     border-radius: 10px;
+
     label {
         color: white;
     }
@@ -74,21 +75,27 @@
         text-align: left;
         padding: 8px;
     }
+
     & td:first-child {
         width: 7em;
     }
+
     & td:nth-child(2) {
         width: 6em;
     }
+
     & td:nth-child(3) {
         width: 9em;
     }
+
     & td:nth-child(4) {
         width: 24em;
     }
+
     & td:last-child {
         width: 24em;
     }
+
     & th {
         background-color: #000;
         color: white;
@@ -98,9 +105,9 @@
         text-align: left;
         padding: 8px;
     }
+
     & tr:nth-child(even) {
         background-color: rgba(220, 220, 220, 0.9);
     }
 
 }
-

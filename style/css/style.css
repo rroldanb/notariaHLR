@@ -48,7 +48,9 @@ body {
   background-color: #f1f5f9;
   /**** Imagen de fondo para todo el sitio ***/
   background-image: url(../../img/moais.jpeg);
-  background-size: cover;
+  background-repeat: repeat;
+  backdrop-filter: url(../../img/moais.jpeg#filters) blur(10px) opacity(99%);
+  background-size: 100vw;
 }
 
 img {
@@ -167,7 +169,7 @@ p:last-child {
 .base-content {
   flex: 1;
   position: relative;
-  margin-top: 64px;
+  margin-top: 32px;
   margin-bottom: 15%;
 }
 .base-footer {
@@ -189,10 +191,12 @@ p:last-child {
 
 .hero-section, .hero-section-sub {
   padding: 60px 0px 10px;
+  margin-top: 64px;
   background-image: linear-gradient(to right, var(--rr-notaria-hero-gradient-start, #575249), var(--rr-notaria-hero-gradient-end, rgba(131, 126, 116, 0.9058823529)));
 }
 .hero-section-sub {
   padding: 10px;
+  margin-top: 0%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -217,17 +221,18 @@ p:last-child {
   }
   .base-content {
     margin-top: 0;
+    margin-bottom: 26em;
   }
   .hero-section, .hero-section-sub {
     padding: 24px;
+    margin-top: 0;
   }
   .formularioContacto {
     margin-top: 0em;
-    margin-bottom: 18em;
   }
   .indiceDoc {
     margin-top: 0em;
-    margin-bottom: 18em;
+    margin-bottom: 30em;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -239,7 +244,6 @@ p:last-child {
   .indiceDoc {
     height: auto;
     margin-top: 0;
-    margin-bottom: auto;
   }
 }
 .pre-header {
@@ -277,7 +281,7 @@ p:last-child {
 }
 
 .footercards {
-  color: rgb(236, 183, 36);
+  color: rgb(244, 202, 88);
 }
 .footercards ul {
   list-style: none;
@@ -292,7 +296,7 @@ p:last-child {
 }
 .datosContacto a {
   text-decoration: none;
-  color: rgb(236, 183, 36);
+  color: rgb(244, 202, 88);
 }
 
 .contact_Icons {
@@ -350,10 +354,9 @@ p:last-child {
   }
 }
 .tabs-container {
-  margin-top: 15%;
+  margin-top: 10em;
   margin-left: 15%;
-  width: 75%;
-  max-width: 1800px;
+  width: 70%;
   height: 75%;
 }
 .tabs-link {
@@ -660,7 +663,7 @@ p:last-child {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    top: 7rem;
+    top: 10%;
     z-index: 999;
   }
   .navbar-menu.active {
@@ -723,11 +726,11 @@ p:last-child {
   border-radius: 10px;
   width: 15em;
   padding: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #tramiteContainer {
-  margin-left: 5%;
-  margin-right: 5%;
   margin-top: 1em;
 }
 
@@ -735,6 +738,7 @@ p:last-child {
   border: #000 solid 1px;
   background-color: rgba(87, 82, 73, 0.5529411765);
   margin-top: 10em;
+  padding-bottom: 3em;
   border-radius: 10px;
 }
 .indiceDoc label {
@@ -833,6 +837,17 @@ p:last-child {
   margin-left: 45%;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(131, 126, 116, 0.9058823529);
+  color: rgb(225, 171, 24);
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #575249;
+}
+
 .enlacesCont {
   width: 70%;
   background-color: rgba(221, 221, 221, 0.7450980392);
@@ -854,11 +869,18 @@ p:last-child {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-radius: 10px;
   margin: 20px;
+  transition: background-color 0.2s ease-in-out;
 }
-
-a img {
+.enlaceCard:hover {
+  background-color: rgba(131, 126, 116, 0.9058823529);
+}
+.enlaceCard a img {
   width: 123px;
   height: 123px;
+  transition: transform 0.2s ease-in-out;
+}
+.enlaceCard a img:hover {
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width: 768px) {
@@ -886,7 +908,7 @@ a img {
 
 .contactFormCont {
   background-color: rgba(87, 82, 73, 0.5529411765);
-  color: whitesmoke;
+  color: #f1f5f9;
   border-radius: 10px;
   display: grid;
   grid-template-columns: 40% 60%;

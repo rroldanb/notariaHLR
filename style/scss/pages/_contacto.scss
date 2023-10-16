@@ -8,8 +8,8 @@
 }
 
 .contactFormCont {
-    background-color: #5752498d;
-    color: whitesmoke;
+    background-color: $color-fondo-primario;
+    color: $color-slate-100;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 40% 60%;

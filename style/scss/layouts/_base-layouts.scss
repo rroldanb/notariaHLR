@@ -30,7 +30,7 @@ $hero-gradient-end: var(--#{$prefix}-hero-gradient-end, $color-contraste-suave);
     &-content {
         flex: 1;
         position: relative;
-        margin-top: 64px;
+        margin-top: 32px;
         margin-bottom: 15%
     }
 
@@ -59,11 +59,13 @@ $hero-gradient-end: var(--#{$prefix}-hero-gradient-end, $color-contraste-suave);
 // HERO TITLE SECTION
 .hero-section {
     padding: 60px 0px 10px;
+    margin-top: 64px;
     background-image: linear-gradient(to right, $hero-gradient-start, $hero-gradient-end);
 
     &-sub {
         @extend .hero-section;
         padding: 10px;
+        margin-top: 0%;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
     }
@@ -91,19 +93,20 @@ $hero-gradient-end: var(--#{$prefix}-hero-gradient-end, $color-contraste-suave);
 
     .base-content {
         margin-top: 0;
+        margin-bottom: 26em;
     }
 
     .hero-section {
         padding: 24px;
+        margin-top: 0;
     }
-
+  
     .formularioContacto {
         margin-top: 0em;
-        margin-bottom: 18em;
     }
     .indiceDoc {
         margin-top: 0em;
-        margin-bottom: 18em;
+        margin-bottom: 30em;
     }
 
 }
@@ -118,6 +121,7 @@ $hero-gradient-end: var(--#{$prefix}-hero-gradient-end, $color-contraste-suave);
     .indiceDoc {
         height: auto;
         margin-top: 0;
-        margin-bottom: auto;
     }
+
+
 }
