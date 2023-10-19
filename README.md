@@ -13,8 +13,11 @@
 - Revisa, organiza en carpetas y vuelve a linkear cada una de las imágenes.
 - Agrega metadata a cada página.
 - Afina margenes y layouts pagina trámites.
+- Agrega 1 nueva carta en página tramites, ahora son 8. 
 - Elimina y desvincula archivos no utilizados.
 - Crea y vincula media queries en partial conteniendo todas en un solo archivo.
+- Afina ubicación despliegue de menú hamburguesa.
+- Revisa y corrige detalles de visualización, margenes y padding en todas las páginas.
 
 ### Commit (15/10/2023)
 - Arregla menu hamburguesa que se sobreponía.

@@ -115,7 +115,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            top: 10%;
+            top: 8em;
             z-index: 999;
 
             &.active {
@@ -145,7 +145,7 @@
 
 @media only screen and (max-width: 453px) {
     .navbar-menu {
-        top: 15%;
+        top: 16em;
     }
 .container{
     padding: 0;

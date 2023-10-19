@@ -249,6 +249,7 @@ p:last-child {
 
 .footercards {
   color: rgb(244, 202, 88);
+  font-weight: bolder;
 }
 .footercards ul {
   list-style: none;
@@ -264,6 +265,7 @@ p:last-child {
 .datosContacto a {
   text-decoration: none;
   color: rgb(244, 202, 88);
+  font-weight: bolder;
 }
 
 .contact_Icons {
@@ -298,6 +300,7 @@ p:last-child {
   font-size: x-small;
   margin-bottom: 0px;
   text-align: center;
+  font-weight: bolder;
 }
 .firma p {
   margin-top: 0rem;
@@ -308,7 +311,7 @@ p:last-child {
 }
 
 .tabs-container {
-  margin-top: 10em;
+  margin-top: 2em;
   margin-left: 15%;
   width: 70%;
   height: 75%;
@@ -627,7 +630,7 @@ p:last-child {
 .indiceDoc {
   border: #000 solid 1px;
   background-color: rgba(87, 82, 73, 0.5529411765);
-  margin-top: 10em;
+  margin-top: 0em;
   padding-bottom: 3em;
   border-radius: 10px;
 }
@@ -779,7 +782,7 @@ p:last-child {
   border-radius: 10px;
   padding: 1.5em;
   max-width: 1400px;
-  margin-top: 10em;
+  margin-top: 0em;
 }
 
 .contactFormCont {
@@ -938,7 +941,7 @@ p:last-child {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    top: 10%;
+    top: 8em;
     z-index: 999;
   }
   .navbar-menu.active {
@@ -960,7 +963,7 @@ p:last-child {
 }
 @media only screen and (max-width: 453px) {
   .navbar-menu {
-    top: 15%;
+    top: 16em;
   }
   .container {
     padding: 0;
