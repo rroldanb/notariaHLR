@@ -9,6 +9,13 @@
 
  ## Documentacion de commits:
 
+### Commit (19/10/2023)
+- Revisa, organiza en carpetas y vuelve a linkear cada una de las imágenes.
+- Agrega metadata a cada página.
+- Afina margenes y layouts pagina trámites.
+- Elimina y desvincula archivos no utilizados.
+- Crea y vincula media queries en partial conteniendo todas en un solo archivo.
+
 ### Commit (15/10/2023)
 - Arregla menu hamburguesa que se sobreponía.
 - Revisa y mejora estilos responsive en todas las paginas.

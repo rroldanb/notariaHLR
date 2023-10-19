@@ -6,6 +6,7 @@
         width: 70%;
         height: 75%;
     }
+
     &-link {
         background-color: $color-contraste-primario;
         margin-right: 1px;
@@ -16,10 +17,12 @@
         font-weight: 500;
         color: $color-amarillo-primario;
         border-radius: 5px;
+
         &.active {
             background-color: $color-amarillo-secundario;
             color: $color-contraste-primario;
         }
+
         &:hover {
             background-color: $color-contraste-suave;
             color: $color-amarillo-secundario;
@@ -71,28 +74,4 @@
     flex-direction: column;
     margin-left: 0%;
     width: 100%;
-}
-
-
-@media only screen and (max-width: 768px) {
-    .accordions-container {
-        display: flex;
-        padding-top: 15%;
-    }
-
-    .tabs-container {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .accordions-container {
-        display: flex;
-        padding-top: 40%;
-    }
-
-    .tabs-container {
-        display: none;
-    }
-
 }

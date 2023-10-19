@@ -18,7 +18,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
-
     color: $color-slate-500;
     font-size: 16px;
     line-height: 1.5;
@@ -26,15 +25,12 @@ body {
     font-family: "Noto Sans", sans-serif;
     background-color: $color-slate-100;
 
-    /**** Imagen de fondo para todo el sitio ***/
-    background-image: url(../../img/moais.jpeg);
+    // Imagen de fondo para todo el sitio
+    background-image: url(../../img/backgrounds/moais-bg.jpeg);
     background-repeat: repeat;
-    backdrop-filter: url(../../img/moais.jpeg#filters)blur(10px) opacity(99%);
+    backdrop-filter: url(../../img/backgrounds/moais-bg.jpeg#filters)blur(10px) opacity(99%);
     background-size: 100vw;
-    
 }
-
-
 
 // DEFAULT STYLES
 img {

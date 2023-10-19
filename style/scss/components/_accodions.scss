@@ -3,7 +3,7 @@ $accordion-title-bg: var(--#{$prefix}-accordion-title-bg, $color-slate-900) !def
 $accordion-title-hover-bg: var(--#{$prefix}-accordion-title-hover-bg, $color-slate-700) !default;
 $accordion-title-border: var(--#{$prefix}-accordion-title-border, $color-slate-200) !default;
 
-$accordion-content-bg: var(--#{$prefix}-accordion-content-bg,$color-slate-900 ) !default;
+$accordion-content-bg: var(--#{$prefix}-accordion-content-bg, $color-slate-900 ) !default;
 
 .accordion {
   --#{$prefix}-accordion-chevron-angle: 0deg;
@@ -12,13 +12,13 @@ $accordion-content-bg: var(--#{$prefix}-accordion-content-bg,$color-slate-900 ) 
   appearance: none;
   box-shadow: $shadow;
   border-radius: 8px;
+
   &-item {
     &[open] {
       --#{$prefix}-accordion-chevron-angle: -90deg;
 
-      // max-height: 500px;
-
     }
+
     margin-bottom: 16px;
   }
 
@@ -35,13 +35,16 @@ $accordion-content-bg: var(--#{$prefix}-accordion-content-bg,$color-slate-900 ) 
     background-color: $accordion-title-bg;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+
     &:hover {
       background-color: $accordion-title-hover-bg;
     }
+
     &:focus {
       outline: 0;
       background-color: $accordion-title-hover-bg;
     }
+
     &:after {
       top: 16px;
       right: 16px;
@@ -53,7 +56,9 @@ $accordion-content-bg: var(--#{$prefix}-accordion-content-bg,$color-slate-900 ) 
       transition: all .2s ease-in-out;
       background-image: $chevron;
       background-position: center;
+      background-repeat: no-repeat;
     }
+
     &::marker {
       content: '';
     }
@@ -66,11 +71,4 @@ $accordion-content-bg: var(--#{$prefix}-accordion-content-bg,$color-slate-900 ) 
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
   }
-}
-
-@media only screen and (max-width: 620px) {
-.container {
-    padding-left: 3px;
-    padding-right: 3px;
-}
 }

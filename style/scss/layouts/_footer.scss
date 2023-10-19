@@ -21,7 +21,7 @@
 }
 
 .contact_Icons {
-    fill: rgb(163, 163, 66);
+    fill: $color-verde-iconos;
 }
 
 .mapa {
@@ -59,21 +59,10 @@
 }
 
 
-.row {
-    margin-right: 0;
-}
+
 
 #footerNav {
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
-    #footerNav {
-        display: flex;
-    }
-    .base-footer {
-        z-index: 1;
-        position:inherit;
-    }
-}
 
