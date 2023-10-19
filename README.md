@@ -18,6 +18,7 @@
 - Crea y vincula media queries en partial conteniendo todas en un solo archivo.
 - Afina ubicación despliegue de menú hamburguesa.
 - Revisa y corrige detalles de visualización, margenes y padding en todas las páginas.
+- Corrige footer página enlaces.
 
 ### Commit (15/10/2023)
 - Arregla menu hamburguesa que se sobreponía.
