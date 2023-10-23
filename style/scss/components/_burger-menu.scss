@@ -1,7 +1,12 @@
-/*** Menu hamburgesa ***/
-
 .hamburgersa {
     display: none;
     font-size: 3em;
     color: $color-amarillo-primario;
+
+    &:hover {
+        background-color: $color-amarillo-secundario;
+        color: $color-contraste-suave;
+        border-radius: 50px;
+        padding: 0px 5px 5px 5px;
+    }
 }

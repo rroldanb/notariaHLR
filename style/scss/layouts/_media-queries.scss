@@ -25,27 +25,24 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    .indiceDoc {
+        height: auto;
+        margin-top: 0;
+    }
     .formularioContacto {
         height: auto;
         margin-top: 0;
         margin-bottom: auto;
     }
 
-    .indiceDoc {
-        height: auto;
-        margin-top: 0;
-    }
-
     #footerNav {
         display: flex;
     }
-
-    .base-footer {
-        z-index: 1;
-        position: inherit;
+    .accordions-container {
+        display: flex;
+        padding-top: 15%;
     }
-
-
     .contactFormCont {
         display: flex;
         flex-direction: column;
@@ -56,41 +53,32 @@
         flex-direction: column;
         margin-left: 0.5em;
     }
+    .base-footer {
+        z-index: 1;
+        position: inherit;
+    }
 
     .contactoInputs {
         width: 100%;
     }
 
-    #horarioContacto {
-        display: none;
-    }
-
-    .datosContactoForm {
-        display: none;
-    }
-
-    .accordions-container {
-        display: flex;
-        padding-top: 15%;
-    }
-
-    .tabs-container {
+    #horarioContacto, .tabs-container , .datosContactoForm{
         display: none;
     }
 
     .noticia-cards-container,
     .enlacesCont,
-    .formularioContacto {
+    .formularioContacto, .noticia-cards-item{
         padding: 0px;
         border-radius: 10px;
         width: 100%;
         margin-left: 0%;
     }
+    .enlaceCard {
+        margin: 10px 0px;
+    }
 
 }
-
-
-
 
 @media only screen and (max-width: 620px) {
     .container {
@@ -132,13 +120,6 @@
     .hamburgersa {
         display: block;
         cursor: pointer;
-
-        &:hover {
-            background-color: $color-amarillo-secundario;
-            color: $color-contraste-suave;
-            border-radius: 50px;
-            padding: 0px 5px 5px 5px;
-        }
     }
 
 }
@@ -158,6 +139,11 @@
 
 }
 
+@media only screen and (max-width: 320px) {
+    .navbar-menu {
+        top: 18em;
+    }
+}
 
 @media only screen and (min-width: 1441px) {
     #tarjetasTramites {

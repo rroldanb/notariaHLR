@@ -9,6 +9,15 @@
 
  ## Documentacion de commits:
 
+### Commit (22/10/2023)
+- Revisa codigo, eliminando comentarios y espacios innecesarios.
+- Revisa links al css desde los html.
+- Revisa enlaces a imagenes de background.
+- Agrega Página 404.html.
+- Revisa y ajusta margenes y paddings en todas las páginas.
+- Elimina Carrusel redundante para página enlaces.
+
+
 ### Commit (19/10/2023)
 - Revisa, organiza en carpetas y vuelve a linkear cada una de las imágenes.
 - Agrega metadata a cada página.

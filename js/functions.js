@@ -8,7 +8,7 @@ function showTab(tabName) {
         tabContent[i].style.display = "none";
     }
 
-    document.getElementById(tabName).style.display  = "block";
+    document.getElementById(tabName).style.display = "block";
 }
 
 //MENU HAMBURGUESA
@@ -31,7 +31,7 @@ function closeMenu() {
     document.getElementById("lineas3").innerHTML = "&#9776";
     estadoActual = 1;
     hamburgersa.classList.remove("active");
-    headerNavMenu.classList.remove("active");    
+    headerNavMenu.classList.remove("active");
 }
 
 
@@ -48,4 +48,3 @@ lineas3.addEventListener("click", function () {
         estadoActual = 1;
     }
 });
-

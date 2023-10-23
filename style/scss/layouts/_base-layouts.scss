@@ -2,7 +2,6 @@ $hero-text-color: var(--#{$prefix}-hero-text-color, $color-amarillo-secundario);
 $hero-gradient-start: var(--#{$prefix}-hero-gradient-start, $color-contraste-primario);
 $hero-gradient-end: var(--#{$prefix}-hero-gradient-end, $color-contraste-suave);
 
-
 .base {
     &-layout {
         display: flex;
@@ -58,6 +57,7 @@ $hero-gradient-end: var(--#{$prefix}-hero-gradient-end, $color-contraste-suave);
     padding: 60px 0px 10px;
     margin-top: 64px;
     background-image: linear-gradient(to right, $hero-gradient-start, $hero-gradient-end);
+    margin-bottom: 2em;
     &-sub {
         @extend .hero-section;
         padding: 10px;
