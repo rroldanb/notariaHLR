@@ -9,6 +9,10 @@
 
  ## Documentacion de commits:
 
+### Commit (23/10/2023)
+- Aumenta contraste para footer y tabs.
+- Agrega ruta absoluta para imagenes y estilo página 404.
+
 ### Commit (22/10/2023)
 - Revisa codigo, eliminando comentarios y espacios innecesarios.
 - Revisa links al css desde los html.
