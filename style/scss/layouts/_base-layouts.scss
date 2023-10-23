@@ -24,7 +24,7 @@ $hero-gradient-end: var(--#{$prefix}-hero-gradient-end, $color-contraste-suave);
         position: fixed;
         box-shadow: 0 0 1em -0.125em rgb(10 10 10 / 10%),
             0 0 0 1px rgb(10 10 10 / 2%);
-        background-image: linear-gradient(rgba(129, 87, 56, 0.7), rgba(129, 87, 56, 0.7)), url(../../../img/backgrounds/wooden-texture.svg);
+        background-image: linear-gradient(rgba(129, 87, 56, 0.7), rgba(129, 87, 56, 0.7)), url(../../img/backgrounds/wooden-texture.svg);
         background-repeat: repeat;
         background-size: cover;
         border-bottom: 1px solid $color-contraste-primario;

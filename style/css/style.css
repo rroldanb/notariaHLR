@@ -45,9 +45,9 @@ body {
   font-weight: 400;
   font-family: "Noto Sans", sans-serif;
   background-color: #f1f5f9;
-  background-image: url(../../../img/backgrounds/moais-bg.jpeg);
+  background-image: url(../../img/backgrounds/moais-bg.jpeg);
   background-repeat: repeat;
-  backdrop-filter: url(../../../img/backgrounds/moais-bg.jpeg) blur(10px) opacity(99%);
+  backdrop-filter: url(../../img/backgrounds/moais-bg.jpeg) blur(10px) opacity(99%);
   background-size: 100vw;
 }
 
@@ -183,7 +183,7 @@ p:last-child {
   z-index: 9000;
   position: fixed;
   box-shadow: 0 0 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
-  background-image: linear-gradient(rgba(129, 87, 56, 0.7), rgba(129, 87, 56, 0.7)), url(../../../img/backgrounds/wooden-texture.svg);
+  background-image: linear-gradient(rgba(129, 87, 56, 0.7), rgba(129, 87, 56, 0.7)), url(../../img/backgrounds/wooden-texture.svg);
   background-repeat: repeat;
   background-size: cover;
   border-bottom: 1px solid #575249;
