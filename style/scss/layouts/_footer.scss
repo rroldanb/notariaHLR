@@ -3,7 +3,10 @@
 
     & ul {
         list-style: none;
-        font-weight: bolder;
+    }
+    & p {
+        color: $color-amarillo-secundario;
+        font-weight: bold;
     }
 }
 
@@ -32,7 +35,6 @@
     text-align: center;
     padding-bottom: 1em;
     padding-top: 1em;
-
     & iframe {
         border-radius: 10px;
         width: 200px;
@@ -45,13 +47,14 @@
     padding-bottom: 1em;
 
     & h4 {
-        font-weight: bold;
+        font-weight: bolder;
         text-decoration: underline;
     }
 
     & p {
         padding: 0px;
         margin: 0px;
+
     }
 }
 
@@ -59,10 +62,12 @@
     font-size: x-small;
     margin-bottom: 0px;
     text-align: center;
-    font-weight: bolder;
+
 
     & p {
         margin-top: 0rem;
+        font-weight: bold;
+        color: $color-slate-50;
     }
 }
 

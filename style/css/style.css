@@ -267,7 +267,10 @@ p:last-child {
 }
 .footercards ul {
   list-style: none;
-  font-weight: bolder;
+}
+.footercards p {
+  color: rgb(244, 202, 88);
+  font-weight: bold;
 }
 
 .datosContacto img {
@@ -303,7 +306,7 @@ p:last-child {
   padding-bottom: 1em;
 }
 .horario h4 {
-  font-weight: bold;
+  font-weight: bolder;
   text-decoration: underline;
 }
 .horario p {
@@ -315,10 +318,11 @@ p:last-child {
   font-size: x-small;
   margin-bottom: 0px;
   text-align: center;
-  font-weight: bolder;
 }
 .firma p {
   margin-top: 0rem;
+  font-weight: bold;
+  color: #f8fafc;
 }
 
 #footerNav {
@@ -371,7 +375,6 @@ p:last-child {
   /* Fallback color */
   background: #575249;
   opacity: 0.9;
-  color: white;
   width: 100%;
   padding: 1em;
 }
@@ -382,6 +385,8 @@ p:last-child {
 .tab-content .tabText p {
   margin: 0px;
   text-align: justify;
+  color: #f8fafc;
+  font-weight: 400;
 }
 
 .accordions-container {
