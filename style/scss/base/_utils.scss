@@ -1,32 +1,56 @@
+.container {
+  width: 100%;
+  display: block;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
 
-.container{
-    width: 100%;
-    display: block;
-    max-width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+.flex-container {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+  margin-right: 2em;
+
+  &-col {
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
   }
-  
-  .flex-container {
-    gap: 16px;
-    display: flex;
-    align-items: center;
-    margin-left: 2em;
-    margin-right: 2em;
-    &-col {
-      flex-direction: column;
-      justify-content: center;
-      align-content: space-between;
-    }
-    &-header {
-      @extend .flex-container;
-      justify-content: space-around;
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-    &.wrap {
-      flex-wrap: wrap;
-    }
+
+  &-header {
+    @extend .flex-container;
+    justify-content: space-around;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.contenedor-logo-rotador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+}
+
+.rotar {
+  width: 400px;
+  animation: rotacion 6s linear infinite;
+}
+
+@keyframes rotacion {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
