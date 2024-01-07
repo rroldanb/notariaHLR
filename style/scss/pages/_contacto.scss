@@ -16,9 +16,7 @@
     grid-template-rows: auto;
     grid-template-areas:
         "tituloFormContacto tituloFormContacto"
-        "timbreContacto contactoInputsCont"
-        "horarioContacto contactoInputsCont"
-        "datosContactoForm contactoInputsCont";
+        "contacto-form-izq contactoInputsCont";
 }
 
 .tituloFormContacto {
@@ -33,15 +31,25 @@
     }
 }
 
+.contacto-form-izq{
+    background-image: url(../../../img/fondoHLR.webp);
+    background-size:50vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
 .timbreContacto {
     grid-area: timbreContacto;
-    border-bottom-left-radius: 10px;
-    color: $color-amarillo-primario;
+    // background-color: $color-contraste-suave;
+    // opacity: .9;
     text-align: center;
-    margin: 1em;
-    box-shadow: $color-contraste-primario 3px 3px 6px 0px inset, $color-contraste-suave -3px -3px 6px 1px inset;
+    margin: 0em;
+    width: 100%;
 
+    // box-shadow: $color-contraste-primario 3px 3px 6px 0px inset, $color-contraste-suave -3px -3px 6px 1px inset;
     & img {
+        display: none;
         width: 15em;
         max-width: 40%;
     }
@@ -50,14 +58,22 @@
     h5 {
         margin: 0;
         font-weight: bold;
+        color: $color-amarillo-primario;
     }
 }
 
 #horarioContacto {
     grid-area: horarioContacto;
-    padding-top: 1em;
+    background-color: $color-contraste-suave;
+    // opacity: .9;
+    padding-top: 1rem;
+    margin-top: 20rem;
+    width: 100%;
     justify-self: center;
     text-align: center;
+    & p {
+        color: $color-amarillo-secundario;
+    }
 }
 
 
@@ -65,7 +81,11 @@
     grid-area: datosContactoForm;
     text-align: center;
     padding: 0em;
+    padding-bottom: 2rem;
     margin: 0;
+    background-color: $color-contraste-suave;
+    // opacity: .9;
+
 
     & h4 {
         font-weight: bold;
@@ -75,9 +95,10 @@
     & p {
         margin: 0;
         padding: 0;
+        color: $color-amarillo-secundario;
     }
 
     & a {
-        color: whitesmoke;
+        color: $color-amarillo-secundario;
     }
 }

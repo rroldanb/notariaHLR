@@ -41,16 +41,16 @@
 }
 
 .rotar {
-  width: 400px;
-  animation: rotacion 6s linear infinite;
+  width: 150px;
+  animation: rotacion 2s linear infinite;
 }
 
 @keyframes rotacion {
   from {
-    transform: rotateY(0deg);
+    transform: rotate(0deg);
   }
 
   to {
-    transform: rotateY(360deg);
+    transform: rotate(360deg);
   }
 }

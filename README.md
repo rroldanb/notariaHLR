@@ -1,13 +1,17 @@
-# Entrega3 proyecto notaria Juan Perez
-#### Curso CoderHouse Desarrollo Web comision dw-58465
-## Aplicando SCSS a la entrega 2
+# Proyecto notaria Henriette Larrère
 
-- Repositorio público de esta entrega en [Repositorio Github]
-- Deploy de esta [entrega en Github] y en [Netlify] 
-- Referencia [entrega 2 en Github]
+- Repositorio público en [Repositorio Github]
+- Deploy de esta [Github Pages]
 
 
  ## Documentacion de commits:
+
+### Commit (07/01/2024)
+- Agrega contenedor para elementos de index.html
+- Agrega funcionalidad de busqueda para tarjetas de tramites
+- Cambia el despliegue de imagenes por script para inyectarlas dinámicamente
+- Quita acceso a indice-documentos
+- Re-estiliza página contacto
 
 ### Commit (23/10/2023)
 - Aumenta contraste para footer y tabs.
@@ -91,7 +95,6 @@ $color-fondo-suave: #ddddddbe;
 }
 ```
 
-[Repositorio Github]: https://github.com/rroldanb/dw-58465-entrega3.git
-[entrega en Github]: https://rroldanb.github.io/dw-58465-entrega3/ 
-[Netlify]: https://notariajuanperez.netlify.app/
-[entrega 2 en Github]: https://github.com/rroldanb/entrega2.git
+[Repositorio Github]: https://github.com/rroldanb/notariaHLR.git
+[Github Pages]: https://rroldanb.github.io/notariaHLR/
+
