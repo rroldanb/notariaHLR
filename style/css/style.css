@@ -45,9 +45,9 @@ body {
   font-weight: 400;
   font-family: "Noto Sans", sans-serif;
   background-color: #f1f5f9;
-  background-image: url(../../img/backgrounds/moais-bg.jpeg);
+  background-image: url(../../img/edificio-baron-.jpg);
   background-repeat: repeat;
-  backdrop-filter: url(../../img/backgrounds/moais-bg.jpeg) blur(10px) opacity(99%);
+  backdrop-filter: url(../../img/edificio-baron-.jpg) blur(10px) opacity(99%);
   background-size: 100vw;
 }
 
@@ -995,5 +995,12 @@ p:last-child {
     margin-top: 0;
   }
 }
+
+
+.resaltado{
+  border: solid 3px rgb(244, 202, 88);
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
