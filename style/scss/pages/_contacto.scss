@@ -32,7 +32,7 @@
 }
 
 .contacto-form-izq{
-    background-image: url(../../../img/fondoHLR.webp);
+    background-image: url(../../img/fondoHLR.webp);
     background-size:50vh;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -85,7 +85,7 @@
     margin: 0;
     background-color: $color-contraste-suave;
     // opacity: .9;
-
+    border-bottom-left-radius: 10px;
 
     & h4 {
         font-weight: bold;

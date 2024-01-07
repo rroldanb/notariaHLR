@@ -664,6 +664,11 @@ p:last-child {
   margin-right: 5%;
 }
 
+#tramites-card-container {
+  background-color: rgba(221, 221, 221, 0.7450980392);
+  border-radius: 0.5rem;
+}
+
 #tramiteContainer {
   margin-top: 1em;
 }
@@ -830,7 +835,7 @@ p:last-child {
 }
 
 .contacto-form-izq {
-  background-image: url(../../../img/fondoHLR.webp);
+  background-image: url(../../img/fondoHLR.webp);
   background-size: 50vh;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -874,6 +879,7 @@ p:last-child {
   padding-bottom: 2rem;
   margin: 0;
   background-color: rgba(131, 126, 116, 0.9058823529);
+  border-bottom-left-radius: 10px;
 }
 .datosContactoForm h4 {
   font-weight: bold;

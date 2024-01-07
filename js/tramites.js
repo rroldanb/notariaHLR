@@ -59,8 +59,8 @@ let finiquitoTrabajo = new Tramite(
         'Comparecencia personal del trabajador con cédula de identidad vigente.',
         'Acompañar tres (3) copias impresas del finiquito es requerida la firma del empleador aunque sea en digital/escaneada.',
         'Certificado de cotizaciones previsionales al día.',
-        'Permiso de circulación vigente.',
-        'Acreditación de dominio del vehículo.'
+        'El trabajador no debe estar inscrito en el registro de deudores de pensión de alimentos.',
+        'Si el trabajador se encuentra obligado al pago de pensión de alientos y ésta se hace mediante retención por parte del empleador, debe exhibir las 3 últimas liquidaciones de sueldo que acrediten que se han efectuado las retenciones.'
     ],
     '../pages/contacto.html'
 );
@@ -116,7 +116,47 @@ let constitucionSociedad = new Tramite(
     '../pages/contacto.html'
 );
 
-const TRAMITES = [trasnferenciaVehiculos, contratoArriendo, compraventaInmuebles, finiquitoTrabajo, redaccionTestamento, permisoSalirPaisAcompañados, permisoSalirPaisNoAcompañados, constitucionSociedad];
+let salvoconductoPropietario = new Tramite (
+    '../img/cards/llaves-casa.jpeg',
+    'llaves de casa',
+    'Salvoconducto','Si el salvoconducto lo solicita el propietario:',
+    [
+        'Se solicitan en Valparaíso si el interesado sale desde esta ciudad, de no ser así, debe concurrir a la notaria de la ciudad desde donde sale.',
+        'Debe exhibir en original el comprobante de pago de contribuciones o certificado de avalúo o cuentas de servicios básicos, cualquiera de ellos a nombre del propietario.',
+        'Nombre completo del chofer del vehículo que hará la mudanza y patente del mismo.'
+    ],
+    '../pages/contacto.html'
+)
+
+let salvoconductoArrendatario = new Tramite (
+    '../img/cards/llaves-casa.jpeg',
+    'llaves de casa',
+    'Salvoconducto','Si el salvoconducto lo solicita el arrendatario:',
+    [
+        'Se solicitan en Valparaíso si el interesado sale desde esta ciudad, de no ser así, debe concurrir a la notaria de la ciudad desde donde sale.',
+        'Debe exhibir autorización escrita en original del dueño de la propiedad más la fotocopia de su cédula de identidad.',
+        'Se deben exhibir los comprobantes de pago de luz, agua al día.',
+        'Comprobante del pago de la ultima renta de arrendamiento en original.',
+        'Nombre completo del chofer del vehículo que hará la mudanza y patente del mismo.'
+    ],
+    '../pages/contacto.html'
+)
+
+
+
+
+let legalizaFotocopia = new Tramite(
+    '../img/cards/contrato.jpeg',
+    'imagen contrato',
+    'Legalización de Fotocopias','',
+    [
+        'Se requiere exhibir a la notaria el documento original cuya fotocopia se va a legalizar. '
+    ],
+    '../pages/contacto.html'
+);
+
+
+const TRAMITES = [trasnferenciaVehiculos, contratoArriendo, compraventaInmuebles, salvoconductoPropietario, salvoconductoArrendatario, finiquitoTrabajo, redaccionTestamento, permisoSalirPaisAcompañados, permisoSalirPaisNoAcompañados, constitucionSociedad,  legalizaFotocopia];
 
 
 // Función para generar las tarjetas de tramites y agregarlas al contenedor en el HTML
@@ -162,7 +202,7 @@ function renderTramites(tramites) {
                 <div class="card-body">
                     <h2 class="card-title">${tramite.title}</h2>
                     <div class="card-text">
-                        <h4 class="card-subtitle mb-2 text-muted">${tramite.subtitle}</h4>
+                        <h4 class="card-subtitle text-muted">${tramite.subtitle}</h4>
                         <h3 class="card-title">Requisitos</h3>
                         <ul>
                             ${tramite.requirements.map(req => `<li>${req}</li>`).join('')}
