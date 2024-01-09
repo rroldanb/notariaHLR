@@ -165,7 +165,7 @@ function renderTramites2(tramites) {
 
     tramites.forEach(tramite => {
         const card = document.createElement('div');
-        card.classList.add('col');
+        card.classList.add('col miCard');
 
         const cardContent = `
             <div class="card h-100">

@@ -48,3 +48,13 @@ lineas3.addEventListener("click", function () {
         estadoActual = 1;
     }
 });
+
+
+
+/* function habilitarBoton() {
+    // Habilitar el botón de envío una vez se complete el reCAPTCHA
+    let botonEnviar = document.getElementById('enviar');
+    botonEnviar.disabled = false;
+    botonEnviar.classList.remove("disabled")
+}
+ */

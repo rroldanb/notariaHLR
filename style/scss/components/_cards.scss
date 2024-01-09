@@ -1,10 +1,11 @@
 .card {
     border: solid 1px $color-contraste-suave;
-    margin-top: 10px;
+    // margin-top: 10px;
+    margin: 1rem;
     background-color: $color-fondo-suave;
     opacity: .9;
-    min-width: 280px;
-
+    min-width: 380px;
+    // max-width: 500px;
     & img {
         height: 200px;
         overflow: hidden;
@@ -28,6 +29,10 @@
             background-color: $color-contraste-suave;
         }
     }
+}
+
+.row>*{
+    margin-bottom: 1rem;
 }
 
 .noticia-cards {
