@@ -459,6 +459,7 @@ p:last-child {
 }
 .card-text {
   color: #0f172a;
+  font-weight: 300;
 }
 .card-title {
   font-weight: bold;
@@ -654,6 +655,7 @@ p:last-child {
   border-radius: 0.7rem;
   padding: 5px;
   border: none;
+  font-weight: 400;
 }
 
 .flexIndex {
@@ -851,6 +853,7 @@ p:last-child {
   text-align: center;
   margin: 0em;
   width: 100%;
+  background-color: aliceblue;
 }
 .timbreContacto img {
   display: none;
@@ -893,6 +896,7 @@ p:last-child {
   margin: 0;
   padding: 0;
   color: rgb(244, 202, 88);
+  font-weight: 400;
 }
 .datosContactoForm a {
   color: rgb(244, 202, 88);

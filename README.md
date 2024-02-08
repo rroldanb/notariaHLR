@@ -95,6 +95,17 @@ $color-fondo-suave: #ddddddbe;
 }
 ```
 
+### Ambiente de desarrollo
+
+- Dependencias
+-- npm install
+
+- Estilos
+-- npm install -g sass
+-- sass --watch ./style/scss/main.scss ./style/css/style.css
+
+
+
 [Repositorio Github]: https://github.com/rroldanb/notariaHLR.git
 [Github Pages]: https://rroldanb.github.io/notariaHLR/
 
