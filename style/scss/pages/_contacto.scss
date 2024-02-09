@@ -5,6 +5,7 @@
     padding: 1.5em;
     max-width: 1400px;
     margin-top: 0em;
+    opacity: 1;
 }
 
 .contactFormCont {
@@ -27,13 +28,13 @@
     margin-top: 0.5em;
 
     & h2 {
-        color: white;
+        color: $color-amarillo-primario;
         margin-bottom: 1rem;
     }
 }
 
 .contacto-form-izq{
-    background-image: url(../../img/fondoHLR.webp);
+    //background-color: $color-fondo-suave;
     background-size:50vh;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -64,17 +65,21 @@
 
     }
 }
-
+.boceto{
+    height: 350px;
+    box-shadow: gray 3px 3px 6px 0px inset, black -3px -3px 6px 1px inset;
+}
 #horarioContacto {
     grid-area: horarioContacto;
-    background-color: $color-contraste-suave;
+    background-color: $color-contraste-primario;
     padding-top: 1rem;
-    margin-top: 20rem;
+    font-weight: 400;
+    //margin-top: 20rem;
     width: 100%;
     justify-self: center;
     text-align: center;
     & p {
-        color: $color-amarillo-secundario;
+        color: $color-amarillo-primario;
     }
 }
 
@@ -85,9 +90,10 @@
     padding: 0em;
     padding-bottom: 2rem;
     margin: 0;
-    background-color: $color-contraste-suave;
-    // opacity: .9;
+    background-color: $color-contraste-primario;
+    opacity: 1;
     border-bottom-left-radius: 10px;
+    font-weight: 300;
 
     & h4 {
         font-weight: bold;
@@ -97,11 +103,11 @@
     & p {
         margin: 0;
         padding: 0;
-        color: $color-amarillo-secundario;
+        color: $color-amarillo-primario;
         font-weight: 400;
     }
 
     & a {
-        color: $color-amarillo-secundario;
+        color: $color-amarillo-primario;
     }
 }

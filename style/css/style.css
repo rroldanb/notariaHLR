@@ -632,9 +632,10 @@ p:last-child {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   align-items: start;
+  color: #1e293b;
 }
 .contactoInputsCont input::placeholder {
-  color: grey;
+  color: #1e293b;
 }
 .contactoInputsCont textarea::placeholder {
   color: gray;
@@ -643,10 +644,12 @@ p:last-child {
 }
 .contactoInputsCont select {
   color: gray;
+  color: #1e293b;
 }
 
 .contactoInputs {
   margin-left: 2%;
+  color: #1e293b;
 }
 
 .formComp {
@@ -656,6 +659,12 @@ p:last-child {
   padding: 5px;
   border: none;
   font-weight: 400;
+  color: #1e293b;
+}
+
+.labelComp {
+  color: rgb(225, 171, 24);
+  background-color: rgba(87, 82, 73, 0.5529411765);
 }
 
 .flexIndex {
@@ -817,6 +826,7 @@ p:last-child {
   padding: 1.5em;
   max-width: 1400px;
   margin-top: 0em;
+  opacity: 1;
 }
 
 .contactFormCont {
@@ -837,12 +847,11 @@ p:last-child {
   margin-top: 0.5em;
 }
 .tituloFormContacto h2 {
-  color: white;
+  color: rgb(225, 171, 24);
   margin-bottom: 1rem;
 }
 
 .contacto-form-izq {
-  background-image: url(../../img/fondoHLR.webp);
   background-size: 50vh;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -866,17 +875,22 @@ p:last-child {
   color: rgb(225, 171, 24);
 }
 
+.boceto {
+  height: 350px;
+  box-shadow: gray 3px 3px 6px 0px inset, black -3px -3px 6px 1px inset;
+}
+
 #horarioContacto {
   grid-area: horarioContacto;
-  background-color: rgba(131, 126, 116, 0.9058823529);
+  background-color: #575249;
   padding-top: 1rem;
-  margin-top: 20rem;
+  font-weight: 400;
   width: 100%;
   justify-self: center;
   text-align: center;
 }
 #horarioContacto p {
-  color: rgb(244, 202, 88);
+  color: rgb(225, 171, 24);
 }
 
 .datosContactoForm {
@@ -885,8 +899,10 @@ p:last-child {
   padding: 0em;
   padding-bottom: 2rem;
   margin: 0;
-  background-color: rgba(131, 126, 116, 0.9058823529);
+  background-color: #575249;
+  opacity: 1;
   border-bottom-left-radius: 10px;
+  font-weight: 300;
 }
 .datosContactoForm h4 {
   font-weight: bold;
@@ -895,11 +911,11 @@ p:last-child {
 .datosContactoForm p {
   margin: 0;
   padding: 0;
-  color: rgb(244, 202, 88);
+  color: rgb(225, 171, 24);
   font-weight: 400;
 }
 .datosContactoForm a {
-  color: rgb(244, 202, 88);
+  color: rgb(225, 171, 24);
 }
 
 @media only screen and (max-width: 1028px) {
