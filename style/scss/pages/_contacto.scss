@@ -38,6 +38,19 @@
     background-size:50vh;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &-img-cont{
+        background-color: azure;
+        display: flex;
+        justify-content: center;
+        & img{
+            box-shadow: $color-contraste-primario 3px 3px 6px 0px inset, $color-contraste-suave -3px -3px 6px 1px inset;
+        }        
+    }
+
 
 }
 
@@ -67,7 +80,8 @@
 }
 .boceto{
     height: 350px;
-    box-shadow: gray 3px 3px 6px 0px inset, black -3px -3px 6px 1px inset;
+//    box-shadow: gray 3px 3px 6px 0px inset, black -3px -3px 6px 1px inset;
+    box-shadow: $color-contraste-primario 3px 3px 6px 0px inset, $color-contraste-suave -3px -3px 6px 1px inset;
 }
 #horarioContacto {
     grid-area: horarioContacto;

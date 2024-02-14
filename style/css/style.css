@@ -855,6 +855,17 @@ p:last-child {
   background-size: 50vh;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contacto-form-izq-img-cont {
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+}
+.contacto-form-izq-img-cont img {
+  box-shadow: #575249 3px 3px 6px 0px inset, rgba(131, 126, 116, 0.9058823529) -3px -3px 6px 1px inset;
 }
 
 .timbreContacto {
@@ -877,7 +888,7 @@ p:last-child {
 
 .boceto {
   height: 350px;
-  box-shadow: gray 3px 3px 6px 0px inset, black -3px -3px 6px 1px inset;
+  box-shadow: #575249 3px 3px 6px 0px inset, rgba(131, 126, 116, 0.9058823529) -3px -3px 6px 1px inset;
 }
 
 #horarioContacto {
