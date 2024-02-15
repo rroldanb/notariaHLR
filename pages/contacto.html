@@ -82,7 +82,7 @@
             </div>
         </section>
         <form name="contactForm" class="formularioContacto container" method="POST"
-            action="https://formsubmit.co/contacto@larrereravanal.cl">
+            action="https://formsubmit.co/7bd7ef58f05d4bd43b5f5365b2e7b0ee">
             <div class="contactFormCont">
                 <div class="tituloFormContacto">
                     <h2>¿Cómo te podemos ayudar?</h2>
@@ -90,15 +90,15 @@
                 <div class="contactoInputsCont">
                     <div class="contactoNombreCont contactoInputs">
                         <label for="nombre" class="formComp labelComp">Tu Nombre</label>
-                        <input type="text" name="nombre" placeholder="Nombre" class="formComp" required>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="formComp" required>
                     </div>
                     <div class="contactoCorreoCont contactoInputs">
                         <label for="correo" class="formComp labelComp">Tu correo</label>
-                        <input type="email" name="correo" placeholder="Correo electrónico" class="formComp" required>
+                        <input type="email" id="correo" name="correo" placeholder="Correo electrónico" class="formComp" required>
                     </div>
                     <div class="contactoMotivoCont contactoInputs">
                         <label for="motivo" class="formComp labelComp" >Selecciona tu Motivo de Consulta:</label>
-                        <select id="tramiteReq" name="motivo" class="formComp" required>
+                        <select id="motivo" name="motivo" class="formComp" required>
                             <option value="">Motivo de Consulta</option>
                             <option value="consulta">Consulta general</option>
                             <option value="domicilio">Toma de Firma a Domicilio</option>
@@ -108,11 +108,11 @@
                     </div>
                     <div class="contactoAsuntoCont contactoInputs">
                         <label for="asunto" class="formComp labelComp" class="formComp">Asunto</label>
-                        <input type="text" name="asunto" placeholder="Asunto" class="formComp" required>
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto" class="formComp" required>
                     </div>
                     <div class="contactoMensajeCont contactoInputs">
-                        <label for="comentario" class="formComp labelComp">Tu Mensaje</label>
-                        <textarea name="comentario" id="comentarios" cols="30" rows="6"
+                        <label for="comentarios" class="formComp labelComp">Tu Mensaje</label>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="6"
                             placeholder="Déjanos tu mensaje aquí" class="formComp" required></textarea>
                         <p class="formComp labelComp important">* Todos los campos son obligatorios</p>
                     </div>
@@ -121,7 +121,9 @@
                         <input type="submit" value="Enviar" id="enviar" class="botonesContacto " >
 
 
-                        <input type="hidden" name="_next" value="http://localhost:5501/pages/contacto.html">
+                        <input type="hidden" name="_next" value="https://larrereravanal.cl/pages/contacto.html">
+                        
+
                         <input type="hidden" name="_captcha" value="false">
                     </div>
 
