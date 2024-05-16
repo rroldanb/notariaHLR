@@ -3,3 +3,4 @@ notaria.code-workspace
 .vscode
 node_modules/
 experimentos/
+logs/
