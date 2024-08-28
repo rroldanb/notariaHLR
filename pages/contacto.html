@@ -23,13 +23,27 @@
     <link rel="shortcut icon" href="../img/logoHLRcolored.svg" type="image/x-icon">
     <title>Notaria Interina Henriette Larrère :: Contacto</title>
 
+    <head>
+        <title>reCAPTCHA demo: Simple page</title>
+        <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+      </head>
 
-    <!-- Google tag (gtag.js) --> 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16647282564"></script> 
-    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} 
-    gtag('js', new Date()); gtag('config', 'AW-16647282564'); </script>
 
 </head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16647282564"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16647282564');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16647282564"></script>
+
 
 <body>
     <!-- Header-->
@@ -135,7 +149,10 @@
                         <p class="formComp labelComp important">* Todos los campos son obligatorios</p>
                     </div>
 
-                    <div class="contactoEnviarCont contactoInputs">
+                    <div class="contactoEnviarCont contactoInputs container">
+
+                            <div class="g-recaptcha" data-sitekey="6LdibTEqAAAAAECrWnC0hUXTzqjypd6bumeRDCC4" data-action="LOGIN"></div>
+                            <br/>
                         <button type="submit" id="enviar" class="botonesContacto">
                             <span id="spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                             Enviar
