@@ -1,45 +1,46 @@
-const notarias = [
-    // {
-    //     mes: "Enero",
-    //     nombre: "Enzo Repetto Lues (Interino)",
-    //     direccion: "Cochrane Nº 836-838, Valparaíso",
-    //     email: "enzorepettol@gmail.com",
-    //     telefono: "32-2234463"
-    // },
-    // {
-    //     mes: "Febrero",
-    //     nombre: "Pablo Contreras Guerrero (Interino)",
-    //     direccion: "Esmeralda 953, Valparaíso",
-    //     web: "notariacontrerasguerrero.cl",
-    //     telefono: "32-2232598"
-    // },
-    // {
-    //     mes: "Marzo",
-    //     nombre: "Gloria Isabel Ordoñez Cortes (Interino)",
-    //     direccion: "Blanco Nº 854, Valparaíso",
-    //     email: "7notariavalparaiso@gmail.com",
-    //     telefono: "32-2252968, 32-2252654"
-    // },
-    // {
-    //     mes: "Abril",
-    //     nombre: "Luis Felipe Sepúlveda Ponce",
-    //     direccion: "Prat Nº 829, Valparaíso",
-    //     email: "contacto@notariasepulvedaponce.c",
-    //     telefono: "32-2358604, 32-2358600, 32-2358601, 32-2358602"
-    // },
-    // {
-    //     mes: "Mayo",
-    //     nombre: "Claudia Olguin Vargas",
-    //     direccion: "Prat Nº 612, Valparaíso",
-    //     telefono: "32-2210183"
-    // },
-    // {
-    //     mes: "Junio",
-    //     nombre: "Carlos Wendt (Interino)",
-    //     direccion: "Prat 856, Valparaíso",
-    //     web: "notariamartinez.cl",
-    //     telefono: "32-2213733"
-    // },
+const notariasold = 
+[
+    {
+        mes: "Enero",
+        nombre: "Enzo Repetto Lues (Interino)",
+        direccion: "Cochrane Nº 836-838, Valparaíso",
+        email: "enzorepettol@gmail.com",
+        telefono: "32-2234463"
+    },
+    {
+        mes: "Febrero",
+        nombre: "Pablo Contreras Guerrero (Interino)",
+        direccion: "Esmeralda 953, Valparaíso",
+        web: "notariacontrerasguerrero.cl",
+        telefono: "32-2232598"
+    },
+    {
+        mes: "Marzo",
+        nombre: "Gloria Isabel Ordoñez Cortes (Interino)",
+        direccion: "Blanco Nº 854, Valparaíso",
+        email: "7notariavalparaiso@gmail.com",
+        telefono: "32-2252968, 32-2252654"
+    },
+    {
+        mes: "Abril",
+        nombre: "Luis Felipe Sepúlveda Ponce",
+        direccion: "Prat Nº 829, Valparaíso",
+        email: "contacto@notariasepulvedaponce.c",
+        telefono: "32-2358604, 32-2358600, 32-2358601, 32-2358602"
+    },
+    {
+        mes: "Mayo",
+        nombre: "Claudia Olguin Vargas",
+        direccion: "Prat Nº 612, Valparaíso",
+        telefono: "32-2210183"
+    },
+    {
+        mes: "Junio",
+        nombre: "Carlos Wendt (Interino)",
+        direccion: "Prat 856, Valparaíso",
+        web: "notariamartinez.cl",
+        telefono: "32-2213733"
+    },
     {
         mes: "Julio",
         nombre: "Marcela Tavolari Oliveros",
@@ -84,6 +85,95 @@ const notarias = [
         web: "www.larrereravanal.cl"
     }
 ];
+
+const notarias = 
+[
+    {
+        mes: "Enero",
+        nombre: "Henriette Larrère Ravanal (Interina)",
+        direccion: "Chacabuco Nº 2845, Valparaíso",
+        email: "contacto@larrereravanal.cl",
+        telefono: "32-2256652, 32-222049",
+        web: "www.larrereravanal.cl"
+    },
+    {
+        mes: "Febrero",
+        nombre: "Enzo Repetto Lues (Interino)",
+        direccion: "Cochrane Nº 836-838, Valparaíso",
+        email: "enzorepettol@gmail.com",
+        telefono: "32-2234463"  
+    },
+    {
+        mes: "Marzo",
+        nombre: "Pablo Contreras Guerrero (Interino)",
+        direccion: "Esmeralda 953, Valparaíso",
+        web: "notariacontrerasguerrero.cl",
+        telefono: "32-2232598"
+    },
+    {
+        mes: "Abril",
+        nombre: "José Olate González (ex Sepúlveda)",
+        direccion: "Prat Nº 829, Valparaíso",
+        email: "7notariavalparaiso@gmail.com",
+        telefono: "+569 6647 2271"
+    },
+    {
+        mes: "Mayo",
+        nombre: "Luis Felipe Sepúlveda Ponce",
+        direccion: "Prat Nº 869, Valparaíso",
+        email: "contacto@notariasepulvedaponce.c",
+        telefono: "32-2358604, 32-2358600, 32-2358601, 32-2358602"
+    },
+    {
+        mes: "Junio",
+        nombre: "Claudia Olguin Vargas",
+        direccion: "Prat Nº 612, Valparaíso",
+        telefono: "32-2210183"
+    },
+    {
+        mes: "Julio",
+        nombre: "Carlos Wendt (Interino)",
+        direccion: "Prat 856, Valparaíso",
+        web: "www.notariamartinez.cl",
+        telefono: "32-2213733"
+    },
+    {
+        mes: "Agosto",
+        nombre: "Marcela Tavolari Oliveros",
+        direccion: "Blanco Nº 648",
+        email: "notaria@marcelatavolari.cl",
+        telefono: "32-2255094, 32-2757289"
+    },
+    {
+        "mes": "Septiembre",
+        "nombre": "Paola Baeza Navarro (ex Stack)",
+        "direccion": "Cochrane Nº 815, Valparaíso",
+        "email": "terceranotariavalparaiso@gmail.com",
+        "telefono": "+569 6461 6963"
+    },
+    {
+        mes: "Octubre",
+        nombre: "Carlos Wendt (Interino)",
+        direccion: "Prat 856, Valparaíso",
+        web: "notariamartinez.cl",
+        telefono: "32-2213733"
+    },
+    {
+        mes: "Noviembre",
+        nombre: "Marcela Tavolari Oliveros",
+        direccion: "Blanco Nº 648",
+        email: "notaria@marcelatavolari.cl",
+        telefono: "32-2255094, 32-2757289"
+    },
+    {
+        "mes": "Diciembre",
+        "nombre": "Paola Baeza Navarro (ex Stack)",
+        "direccion": "Cochrane Nº 815, Valparaíso",
+        "email": "terceranotariavalparaiso@gmail.com",
+        "telefono": "+569 6461 6963"
+    }
+]
+
 
 const vignas = [
     {
@@ -157,20 +247,20 @@ const vignas = [
         email: "cvon@notariafuenzalida.cl",
         telefono: "32-2713945, 32-2714203"
     },
-    // {
-    //     mes: "6ª Notaría",
-    //     nombre: "Rodrigo Vila Cervera",
-    //     direccion: "Avda. Concón Reñaca Nº 4000 local 19, Concón",
-    //     email: "notariadeconcon@gmail.com, notariadeconconep@gmail.com",
-    //     telefono: "32-3173932"
-    // },
-    // {
-    //     mes: "8ª Notaría Asto Reñaca",
-    //     nombre: "Marcos Díaz León",
-    //     direccion: "AVDA. BORGOÑO Nº 14.439 LOCAL 105, REÑACA",
-    //     email: "info@notariamarcosdiaz.cl",
-    //     telefono: "32-2210183"
-    // },
+    {
+        mes: "6ª Notaría",
+        nombre: "Rodrigo Vila Cervera",
+        direccion: "Avda. Concón Reñaca Nº 4000 local 19, Concón",
+        email: "notariadeconcon@gmail.com, notariadeconconep@gmail.com",
+        telefono: "32-3173932"
+    },
+    {
+        mes: "8ª Notaría Asto Reñaca",
+        nombre: "Marcos Díaz León",
+        direccion: "AVDA. BORGOÑO Nº 14.439 LOCAL 105, REÑACA",
+        email: "info@notariamarcosdiaz.cl",
+        telefono: "32-2210183"
+    },
 
 ];
 
