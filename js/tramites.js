@@ -22,7 +22,7 @@ let trasnferenciaVehiculos = new Tramite(
             'Para que una persona distinta del dueño pueda vender un vehículo a nombre de este, es necesario el poder otorgado por el dueño ante notario.',
             'Si el vendedor o comprador, son personas jurídicas, deben además traer el Rut de la Empresa y la Escritura por la cual consta su personería para representarla, con vigencia.'
         ],
-        '../pages/contacto.html'
+        'mailto:contacto@larrereravanal.cl'
 );
 
 
@@ -36,7 +36,7 @@ let contratoArriendo = new Tramite(
         'Cédula de identidad vigente ambas parte y codeudor solidario en caso de concurrir.',
         'Certificado de Dominio Vigente (solicitar en Conservador de Bienes Raíces respectivo).'
     ],
-    '../pages/contacto.html'
+    'mailto:contacto@larrereravanal.cl'
 );
 
 let compraventaInmuebles = new Tramite(
@@ -48,7 +48,7 @@ let compraventaInmuebles = new Tramite(
         'Necesariamente requiere de la asesoría de un profesional abogado quien, a través de un estudio de los títulos de dominio, determinará que el inmueble se encuentra en condiciones de ser transferido pudiendo de esta forma el comprador adquirir el dominio.',
         'El trámite de compraventa en el oficio notarial termina cuando la propiedad es inscrita en el Conservador de Bienes Raíces.'
     ],
-    '../pages/contacto.html'
+    'mailto:contacto@larrereravanal.cl'
 );
 
 let finiquitoTrabajo = new Tramite(
@@ -62,7 +62,7 @@ let finiquitoTrabajo = new Tramite(
         'El trabajador no debe estar inscrito en el registro de deudores de pensión de alimentos.',
         'Si el trabajador se encuentra obligado al pago de pensión de alientos y ésta se hace mediante retención por parte del empleador, debe exhibir las 3 últimas liquidaciones de sueldo que acrediten que se han efectuado las retenciones.'
     ],
-    '../pages/contacto.html'
+    'mailto:contacto@larrereravanal.cl'
 );
 
 let redaccionTestamento = new Tramite(
@@ -74,7 +74,7 @@ let redaccionTestamento = new Tramite(
         'El testamento solemne abierto -que es el que más se utiliza debe constar por escrito y otorgarse ante competente escribano y tres o 5 testigos.',
         'El testamento solemne cerrado se otorga también ante Notario y tres testigos, para lo cual el testador debe concurrir al acto con su testamento previamente hecho, el que se guarda en un sobre lacrado y sellado que firman el testador, los testigos y el Notario. Este es un documento del cual tiene conocimiento solamente el testador.'
     ],
-    '../pages/contacto.html'
+    'mailto:contacto@larrereravanal.cl'
 );
 
 let permisoSalirPaisAcompañados = new Tramite(
@@ -86,7 +86,7 @@ let permisoSalirPaisAcompañados = new Tramite(
         'Certificado de Nacimiento o Libreta de Familia, más tres fotocopias simples del documento.',
         'Autorización Notarial del padre que no viaja, entregando su consentimiento para la salida del menor o la autorización del Tribunal de Familia que corresponda, en original más tres fotocopias simples.'
     ],
-    '../pages/contacto.html'
+    'mailto:contacto@larrereravanal.cl'
 );
 
 let permisoSalirPaisNoAcompañados = new Tramite(
@@ -99,7 +99,7 @@ let permisoSalirPaisNoAcompañados = new Tramite(
         'Certificado de Defunción en caso de estar fallecidos ambos padres, más tres fotocopias simples.',
         'Autorización Notarial de ambos padres, entregando su consentimiento para la salida del menor, en original más tres fotocopias simples.'
     ],
-    '../pages/contacto.html'
+    'mailto:contacto@larrereravanal.cl'
 );
 
 let constitucionSociedad = new Tramite(
@@ -113,7 +113,7 @@ let constitucionSociedad = new Tramite(
         'Publicación en el Diario Oficial.',
         'Lo anterior, sin perjuicio de las disposiciones contenidas en la Ley N°20.659, que establece un procedimiento simplificado de constitución, modificación o disolución de sociedades comerciales.'
     ],
-    '../pages/contacto.html'
+    'mailto:contacto@larrereravanal.cl'
 );
 
 let salvoconductoPropietario = new Tramite (
@@ -125,7 +125,7 @@ let salvoconductoPropietario = new Tramite (
         'Debe exhibir en original el comprobante de pago de contribuciones o certificado de avalúo o cuentas de servicios básicos, cualquiera de ellos a nombre del propietario.',
         'Nombre completo del chofer del vehículo que hará la mudanza y patente del mismo.'
     ],
-    '../pages/contacto.html'
+    'mailto:contacto@larrereravanal.cl'
 )
 
 let salvoconductoArrendatario = new Tramite (
@@ -139,7 +139,7 @@ let salvoconductoArrendatario = new Tramite (
         'Comprobante del pago de la ultima renta de arrendamiento en original.',
         'Nombre completo del chofer del vehículo que hará la mudanza y patente del mismo.'
     ],
-    '../pages/contacto.html'
+    'mailto:contacto@larrereravanal.cl'
 )
 
 
@@ -152,7 +152,7 @@ let legalizaFotocopia = new Tramite(
     [
         'Se requiere exhibir a la notaria el documento original cuya fotocopia se va a legalizar. '
     ],
-    '../pages/contacto.html'
+    'mailto:contacto@larrereravanal.cl'
 );
 
 
